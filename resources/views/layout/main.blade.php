@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Rentiz - Real Estate Free Website Template</title>
+        <title>Grobo - Robotics Gadget for Automatic Cultivation </title>
 
         <link rel="stylesheet" type="text/css" href="{{ asset('tmplt/css/vendor.css') }}">
 

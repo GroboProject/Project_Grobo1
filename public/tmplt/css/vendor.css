@@ -228,3 +228,16 @@ body.chocolat-open > .chocolat-image-wrapper {
     transition: margin .2s ease;
 }
 
+/*gif video grobo */
+#residence .video-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#residence .video-content {
+    max-width: 800px; /* Mengatur ukuran maksimum video */
+    width: 100%; /* Menyesuaikan ukuran sesuai lebar container */
+    border-radius: 10px; /* Menambahkan sedikit radius untuk efek visual */
+}
+
