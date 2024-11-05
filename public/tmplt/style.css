@@ -193,27 +193,29 @@ i:hover {
 .nav-link.active:after {
   width: 100%;
 }
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-  opacity: 1;
-  transition: opacity 0.3s ease-out, visibility 0.3s ease-out; /* Mengatur durasi delay */
-  transition-delay: 0.2s; /* Menambahkan jeda waktu sebelum muncul */
-}
+/* Hanya aktifkan hover pada layar besar */
+@media (min-width: 768px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+    transition-delay: 0.2s;
+  }
 
-/* Sembunyikan dropdown secara default dengan opacity dan visibility */
-.dropdown-menu {
-  display: block; /* Tetap di-block agar dapat dikontrol */
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-out, visibility 0.3s ease-out; /* Mengatur animasi hilang */
-}
+  /* Dropdown disembunyikan secara default */
+  .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+  }
 
-/* Dropdown muncul dengan opacity penuh */
-.nav-item.dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.2s; /* Delay sebelum dropdown muncul */
+  .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.2s;
+  }
 }
 
 
