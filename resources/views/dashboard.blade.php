@@ -15,50 +15,6 @@
           <h1 class=" text-capitalize  lh-1 my-3">Perfect way to buy and sell a home</h1>
           <p class="lead">Diam vitae, nec mattis lectus quam pretium amet facilisis. Urna, massa aliqua dui
             pellentesque. Ac, gravida in eget non amet eget purus non.</p>
-          <nav class="navbar navbar-expand-lg billboard-nav">
-            <div class="container billboard-search p-0">
-
-              <div class="row billboard-row">
-                <div class="col-lg-3 billboard-select">
-                  <select class="form-select mb-2 mb-lg-0" aria-label="Purpose">
-                    <option selected>Purpose</option>
-                    <option value="1">Buy</option>
-                    <option value="2">Rent</option>
-                    <option value="3">Sell</option>
-                    <option value="4">Something else here</option>
-
-                  </select>
-                </div>
-                <div class="col-lg-3 billboard-select">
-                  <select class="form-select mb-2 mb-lg-0" aria-label="Location">
-                    <option selected>Location</option>
-                    <option value="1">Texas</option>
-                    <option value="2">Miami</option>
-                    <option value="3">Chicago</option>
-                    <option value="4">New York</option>
-                    <option value="5">Something else here</option>
-                  </select>
-                </div>
-                <div class="col-lg-3 billboard-select">
-                  <select class="form-select mb-2 mb-lg-0" aria-label="Type">
-                    <option selected>Type</option>
-                    <option value="1">House</option>
-                    <option value="2">Appartment</option>
-                    <option value="3">Villa</option>
-                    <option value="4">Loft</option>
-                    <option value="5">Bungalow</option>
-                    <option value="3">Something else here</option>
-                  </select>
-                </div>
-
-                <div class="col-lg-3 billboard-btn">
-                  <button type="submit" class="btn btn-primary btn-lg billboard-search">Search</button>
-                </div>
-              </div>
-
-
-            </div>
-          </nav>
         </div>
       </div>
     </div>
@@ -83,7 +39,7 @@
         </div>
         <div class="col-md-2">
           <div class="my-3" role="group" aria-label="3 / 7" style="width: 158.667px; margin-right: 20px;"><img
-              alt="image" src="{{ asset('tmplt/images/logo3.png') }}/"></div>
+              alt="image" src="{{ asset('tmplt/images/logo3.png') }}"></div>
         </div>
         <div class="col-md-2">
           <div class="my-3" role="group" aria-label="3 / 7" style="width: 158.667px; margin-right: 20px;"><img
@@ -132,7 +88,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <a href="index.html"><img src="images/item16.png" class="card-img-top" alt="image"></a>
+              <a href="index.html"><img src="{{ asset('tmplt/images/item16.png') }}" class="card-img-top" alt="image"></a>
               <div class="card-body p-0">
                 <a href="index.html">
                   <h5 class="card-title pt-4">Aliva Priva Jalvin</h5>
@@ -141,9 +97,9 @@
 
                 <div class="card-text">
                   <ul class="d-flex">
-                    <li class="residence-list"> <img src="images/bed.png" alt="image"> 4 bed</li>
-                    <li class="residence-list"> <img src="images/bath.png" alt="image"> 2 bath</li>
-                    <li class="residence-list"> <img src="images/square.png" alt="image"> 1203 Sqft.</li>
+                    <li class="residence-list"> <img src="{{ asset('tmplt/images/bed.png')}}" alt="image"> 4 bed</li>
+                    <li class="residence-list"> <img src="{{ asset('tmplt/images/bath.png')}}" alt="image"> 2 bath</li>
+                    <li class="residence-list"> <img src="{{ asset('tmplt/images/square.png')}}" alt="image"> 1203 Sqft.</li>
                   </ul>
                 </div>
 
@@ -152,7 +108,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <a href="index.html"><img src="images/item17.png" class="card-img-top" alt="image"></a>
+              <a href="index.html"><img src="{{ asset('tmplt/images/item17.png') }}" class="card-img-top" alt="image"></a>
               <div class="card-body p-0">
                 <a href="index.html">
                   <h5 class="card-title pt-4">Aliva Priva Jalvin</h5>
@@ -161,9 +117,9 @@
 
                 <div class="card-text">
                   <ul class="d-flex">
-                    <li class="residence-list"> <img src="images/bed.png" alt="image"> 4 bed</li>
-                    <li class="residence-list"> <img src="images/bath.png" alt="image"> 2 bath</li>
-                    <li class="residence-list"> <img src="images/square.png" alt="image"> 1203 Sqft.</li>
+                    <li class="residence-list"> <img src="{{ asset('tmplt/images/bed.png')}}" alt="image"> 4 bed</li>
+                    <li class="residence-list"> <img src="{{ asset('tmplt/images/bath.png')}}" alt="image"> 2 bath</li>
+                    <li class="residence-list"> <img src="{{ asset('tmplt/images/square.png')}}" alt="image"> 1203 Sqft.</li>
                   </ul>
                 </div>
 
@@ -172,7 +128,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <a href="index.html"><img src="images/item1.jpg" class="card-img-top" alt="image"></a>
+              <a href="index.html"><img src="{{ asset('tmplt/images/item17.png') }}" class="card-img-top" alt="image"></a>
               <div class="card-body p-0">
                 <a href="index.html">
                   <h5 class="card-title pt-4">Aliva Priva Jalvin</h5>
@@ -181,75 +137,16 @@
 
                 <div class="card-text">
                   <ul class="d-flex">
-                    <li class="residence-list"> <img src="images/bed.png" alt="image"> 4 bed</li>
-                    <li class="residence-list"> <img src="images/bath.png" alt="image"> 2 bath</li>
-                    <li class="residence-list"> <img src="images/square.png" alt="image"> 1203 Sqft.</li>
+                    <li class="residence-list"> <img src="{{ asset('tmplt/images/bed.png')}}" alt="image"> 4 bed</li>
+                    <li class="residence-list"> <img src="{{ asset('tmplt/images/bath.png')}}" alt="image"> 2 bath</li>
+                    <li class="residence-list"> <img src="{{ asset('tmplt/images/square.png')}}" alt="image"> 1203 Sqft.</li>
                   </ul>
                 </div>
 
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <a href="index.html"><img src="images/item2.jpg" class="card-img-top" alt="image"></a>
-              <div class="card-body p-0">
-                <a href="index.html">
-                  <h5 class="card-title pt-4">Aliva Priva Jalvin</h5>
-                </a>
-                <p class="card-text">1087 Pin Oak Drive, Clinton, USA</p>
-
-                <div class="card-text">
-                  <ul class="d-flex">
-                    <li class="residence-list"> <img src="images/bed.png" alt="image"> 4 bed</li>
-                    <li class="residence-list"> <img src="images/bath.png" alt="image"> 2 bath</li>
-                    <li class="residence-list"> <img src="images/square.png" alt="image"> 1203 Sqft.</li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <a href="index.html"><img src="images/item3.jpg" class="card-img-top" alt="image"></a>
-              <div class="card-body p-0">
-                <a href="index.html">
-                  <h5 class="card-title pt-4">Aliva Priva Jalvin</h5>
-                </a>
-                <p class="card-text">1087 Pin Oak Drive, Clinton, USA</p>
-
-                <div class="card-text">
-                  <ul class="d-flex">
-                    <li class="residence-list"> <img src="images/bed.png" alt="image"> 4 bed</li>
-                    <li class="residence-list"> <img src="images/bath.png" alt="image"> 2 bath</li>
-                    <li class="residence-list"> <img src="images/square.png" alt="image"> 1203 Sqft.</li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <a href="index.html"><img src="images/item4.jpg" class="card-img-top" alt="image"></a>
-              <div class="card-body p-0">
-                <a href="index.html">
-                  <h5 class="card-title pt-4">Aliva Priva Jalvin</h5>
-                </a>
-                <p class="card-text">1087 Pin Oak Drive, Clinton, USA</p>
-
-                <div class="card-text">
-                  <ul class="d-flex">
-                    <li class="residence-list"> <img src="images/bed.png" alt="image"> 4 bed</li>
-                    <li class="residence-list"> <img src="images/bath.png" alt="image"> 2 bath</li>
-                    <li class="residence-list"> <img src="images/square.png" alt="image"> 1203 Sqft.</li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-          </div>
+          
 
         </div>
 
@@ -273,7 +170,7 @@
         <h2 class="text-capitalize text-center m-0 py-lg-5">Why to choose us</h2>
 
         <div class="text-center col-lg-4">
-          <img src="images/search.png" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
+          <img src="{{ asset('tmplt/images/search.png') }}" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
             height="140" loading="lazy">
           <h4 class="fw-normal mt-5 ">Easy to find</h4>
           <p>Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet
@@ -281,7 +178,7 @@
         </div>
 
         <div class="text-center col-lg-4">
-          <img src="images/price.png" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
+          <img src="{{ asset('tmplt/images/price.png') }}" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
             height="140" loading="lazy">
           <h4 class="fw-normal mt-5">Affordable Prices</h4>
           <p>Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet
@@ -289,7 +186,7 @@
         </div>
 
         <div class="text-center col-lg-4">
-          <img src="images/time.png" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
+          <img src="{{ asset('tmplt/images/time.png') }}" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
             height="140" loading="lazy">
           <h4 class="fw-normal mt-5 ">Quickly Process</h4>
           <p>Ac, gravida in diam vitae, nec mattis lectus quam pretium amet facilisis. Urna, massa aliqua dui
@@ -311,7 +208,7 @@
           <div class="swiper-slide">
             <div class="row my-5 py-lg-5">
               <div class="col-md-8 mx-auto">
-                <img src="images/quote.png" class="rounded mx-auto d-inline" alt="...">
+                <img src="{{ asset('tmplt/images/quote.png') }}" class="rounded mx-auto d-inline" alt="...">
                 <p class="testimonial-p mt-4">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla
                   eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
 
@@ -328,7 +225,7 @@
           <div class="swiper-slide">
             <div class="row my-5 py-lg-5">
               <div class="col-md-8 mx-auto">
-                <img src="images/quote.png" class="rounded mx-auto d-inline" alt="...">
+                <img src="{{ asset('tmplt/images/quote.png') }}" class="rounded mx-auto d-inline" alt="...">
                 <p class="testimonial-p mt-4">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla
                   eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
 
@@ -345,7 +242,7 @@
           <div class="swiper-slide">
             <div class="row my-5 py-lg-5">
               <div class="col-md-8 mx-auto">
-                <img src="images/quote.png" class="rounded mx-auto d-inline" alt="...">
+                <img src="{{ asset('tmplt/images/quote.png') }}" class="rounded mx-auto d-inline" alt="...">
                 <p class="testimonial-p mt-4">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla
                   eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
 
@@ -383,7 +280,7 @@
 
         <div class="col-md-6">
           <div class="image-holder d-flex">
-            <img src="images/group.png" class="img-fluid" alt="Bootstrap Themes" loading="lazy">
+            <img src="{{ asset('tmplt/images/group.png') }}" class="img-fluid" alt="Bootstrap Themes" loading="lazy">
           </div>
         </div>
 
