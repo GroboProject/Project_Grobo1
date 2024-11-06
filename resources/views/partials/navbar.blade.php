@@ -2,8 +2,10 @@
     <nav id="navbar-example2" class="navbar navbar-expand-lg py-2">
 
         <div class="container ">
+            <a class="navbar-brand" href="./index.html">
+                <img src="{{ asset('assets/jpg/logo.png') }}" alt="Logo" class="logo-img">
+            </a>            
 
-            <a class="navbar-brand" href="./index.html"><img src="{{ asset('assets/jpg/logo.png') }}" alt="Logo"></a>
 
 
             <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"

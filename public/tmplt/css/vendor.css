@@ -241,3 +241,10 @@ body.chocolat-open > .chocolat-image-wrapper {
     border-radius: 10px; /* Menambahkan sedikit radius untuk efek visual */
 }
 
+
+/* Logo */
+.logo-img {
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Keeps the aspect ratio */
+}
+
