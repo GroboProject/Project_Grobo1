@@ -81,24 +81,29 @@
                     <img src="{{ asset('tmplt/images/search.png') }}" class="bd-placeholder-img rounded-circle"
                         alt="Bootstrap Themes" width="140" height="140" loading="lazy">
                     <h4 class="fw-normal mt-5 ">Mudah Untuk Dipantau</h4>
-                    <p>Dengan GROBO, Anda dapat memantau kondisi tanaman Anda dari mana saja. Sistem kami memberikan data real-time tentang kelembapan tanah, 
-                      suhu, dan kondisi lainnya, memudahkan Anda mengelola kebun tanpa harus selalu berada di lokasi.</p>
+                    <p>Dengan GROBO, Anda dapat memantau kondisi tanaman Anda dari mana saja. Sistem kami memberikan data
+                        real-time tentang kelembapan tanah,
+                        suhu, dan kondisi lainnya, memudahkan Anda mengelola kebun tanpa harus selalu berada di lokasi.</p>
                 </div>
 
                 <div class="text-center col-lg-4">
                     <img src="{{ asset('tmplt/images/price.png') }}" class="bd-placeholder-img rounded-circle"
                         alt="Bootstrap Themes" width="140" height="140" loading="lazy">
                     <h4 class="fw-normal mt-5">Efisien dan Hemat Biaya</h4>
-                    <p>GROBO membantu menghemat biaya operasional dengan sistem penyiraman otomatis yang tepat waktu dan hemat air. Dengan teknologi ini,
-                       kami membantu petani meningkatkan efisiensi dan mengurangi penggunaan sumber daya yang berlebihan.</p>
+                    <p>GROBO membantu menghemat biaya operasional dengan sistem penyiraman otomatis yang tepat waktu dan
+                        hemat air. Dengan teknologi ini,
+                        kami membantu petani meningkatkan efisiensi dan mengurangi penggunaan sumber daya yang berlebihan.
+                    </p>
                 </div>
 
                 <div class="text-center col-lg-4">
                     <img src="{{ asset('tmplt/images/time.png') }}" class="bd-placeholder-img rounded-circle"
                         alt="Bootstrap Themes" width="140" height="140" loading="lazy">
                     <h4 class="fw-normal mt-5 ">Proses Otomatis Cepat dan Akurat</h4>
-                    <p>Dengan proses otomatisasi yang presisi, GROBO memastikan setiap tanaman mendapatkan perawatan yang sesuai. Proses penyiraman dan 
-                      pemupukan dilakukan dengan cepat dan tepat, sehingga hasil panen lebih maksimal tanpa perlu intervensi manual. </p>
+                    <p>Dengan proses otomatisasi yang presisi, GROBO memastikan setiap tanaman mendapatkan perawatan yang
+                        sesuai. Proses penyiraman dan
+                        pemupukan dilakukan dengan cepat dan tepat, sehingga hasil panen lebih maksimal tanpa perlu
+                        intervensi manual. </p>
                 </div>
             </div>
         </div>
@@ -116,8 +121,11 @@
                             <div class="col-md-8 mx-auto">
                                 <img src="{{ asset('tmplt/images/quote.png') }}" class="rounded mx-auto d-inline"
                                     alt="...">
-                                <p class="testimonial-p mt-4">GROBO menghadirkan inovasi yang sangat membantu dalam sektor pertanian. Dengan otomatisasi yang canggih, sistem ini telah mempercepat proses kerja dan 
-                                  meningkatkan hasil produksi secara signifikan. Kami bangga menjadi bagian dari masa depan pertanian modern bersama GROBO.</p>
+                                <p class="testimonial-p mt-4">GROBO menghadirkan inovasi yang sangat membantu dalam sektor
+                                    pertanian. Dengan otomatisasi yang canggih, sistem ini telah mempercepat proses kerja
+                                    dan
+                                    meningkatkan hasil produksi secara signifikan. Kami bangga menjadi bagian dari masa
+                                    depan pertanian modern bersama GROBO.</p>
 
                                 <div class="row">
                                     <div class="col-md-8">
@@ -130,22 +138,26 @@
                     </div>
 
                     <div class="swiper-slide">
-                      <div class="row my-5 py-lg-5">
-                          <div class="col-md-8 mx-auto">
-                              <img src="{{ asset('tmplt/images/quote.png') }}" class="rounded mx-auto d-inline" alt="...">
-                              <p class="testimonial-p mt-4">
-                                  "Bekerja di GROBO memberikan kesempatan bagi saya untuk menjadi bagian dari revolusi pertanian. Dengan teknologi otomatisasi yang kami kembangkan, kami berupaya membantu petani memanfaatkan sumber daya secara lebih efisien, sambil meningkatkan hasil panen dan kualitas hidup mereka."
-                              </p>
-                  
-                              <div class="row">
-                                  <div class="col-md-8">
-                                      <p class="pt-5 mb-1">Tim RPL</p>
-                                      <p class="">Kelompok 8</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                        <div class="row my-5 py-lg-5">
+                            <div class="col-md-8 mx-auto">
+                                <img src="{{ asset('tmplt/images/quote.png') }}" class="rounded mx-auto d-inline"
+                                    alt="...">
+                                <p class="testimonial-p mt-4">
+                                    "Bekerja di GROBO memberikan kesempatan bagi saya untuk menjadi bagian dari revolusi
+                                    pertanian. Dengan teknologi otomatisasi yang kami kembangkan, kami berupaya membantu
+                                    petani memanfaatkan sumber daya secara lebih efisien, sambil meningkatkan hasil panen
+                                    dan kualitas hidup mereka."
+                                </p>
+
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p class="pt-5 mb-1">Tim RPL</p>
+                                        <p class="">Kelompok 8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class=" testimonial-swiper-button col-md-3 position-absolute">
@@ -158,29 +170,85 @@
         </div>
     </section>
 
+
+
     <!-- Help start  -->
     <section id="help" class="py-5"
         style="background: linear-gradient(270deg, #1A242F 0.01%, rgba(26, 36, 47, 0.00) 100%);">
-        <div class="container-lg my-5">
-
-            <div class="row d-flex justify-content-between align-items-center">
-
-                <div class="col-md-6">
-                    <div class="image-holder d-flex">
-                        <img src="{{ asset('tmplt/images/group.png') }}" class="img-fluid" alt="Bootstrap Themes"
-                            loading="lazy">
-                    </div>
+        <div class="container-xxl py-5">
+            <div class="container py-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-secondary text-uppercase">Our Team</h6>
+                    <h1 class="mb-5">Expert Team Members</h1>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="text-content ps-md-5 mt-4 mt-md-0">
-                        <h2 class="text-capitalize">We help people to find homes</h2>
-                        <p>Mauris orci donec blandit maecenas. Orci lorem purus porttitor massa consectetur. Neque,
-                            vestibulum sed
-                            varius magna et at. Eu, adipiscing morbi augue justo. Nibh laoreet volutpat quis velit. Blandit
-                            aliquam
-                            donec sed morbi congue eget lorem viverra porta id lobortis.</p>
-                        <a href="index.html" class="btn btn-primary btn-lg">Get In Touch</a>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid" src="{{ asset('tmplt2/img/team-1.jpg') }}" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <p>Designation</p>
+                            <div class="btn-slide mt-1">
+                                <i class="fa fa-share"></i>
+                                <span>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <p>Designation</p>
+                            <div class="btn-slide mt-1">
+                                <i class="fa fa-share"></i>
+                                <span>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <p>Designation</p>
+                            <div class="btn-slide mt-1">
+                                <i class="fa fa-share"></i>
+                                <span>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                        <div class="team-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <p>Designation</p>
+                            <div class="btn-slide mt-1">
+                                <i class="fa fa-share"></i>
+                                <span>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -194,15 +262,15 @@
         <div class="container my-5 py-5">
             <div class="row featurette py-lg-5 ">
                 <div class="col-md-5 order-md-1 d-flex">
-                    <h1 class="text-capitalize  lh-1 mb-3">Let’s simply begin with rentiz.</h1>
+                    <h1 class="text-capitalize  lh-1 mb-3">Come collaborate with us</h1>
                 </div>
                 <div class="col-md-7 order-md-2">
                     <div class="text-content ps-md-5 mt-4 mt-md-0">
-                        <p class="py-lg-2">Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue justo. Nibh
-                            laoreet volutpat quis velit. Blandit aliquam donec sed morbi congue eget lorem viverra porta id
-                            lobortis.</p>
-                        <a href="index.html" class="btn btn-primary btn-lg px-4 me-md-2">Get
-                            Started</a>
+                        <p class="py-lg-2">Kami percaya bahwa kolaborasi adalah kunci untuk meraih hasil terbaik dan
+                            menciptakan perubahan yang berarti. Dengan keahlian, ide, dan semangat Anda, kita bisa membuka
+                            peluang baru, menghasilkan inovasi, dan mewujudkan proyek yang lebih besar. Bersama-sama, kita
+                            tidak hanya bekerja, tetapi juga tumbuh dan belajar.</p>
+                        <a href="index.html" class="btn btn-primary btn-lg px-4 me-md-2">Join With Us</a>
                     </div>
                 </div>
             </div>

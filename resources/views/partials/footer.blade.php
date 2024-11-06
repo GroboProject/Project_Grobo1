@@ -58,15 +58,10 @@
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 ">
             <div class="col-md-8 d-flex align-items-center">
-                <p>© 2023 TemplatesJungle, Inc. All rights reserved.</p>
+                <p>© 2024 Grobo, Inc. All rights reserved.</p>
 
             </div>
-            <div class="col-md-4 d-flex align-items-center">
-                <p>HTML template by: <a href="https://templatesjungle.com/" class="link-primary"
-                        target="_blank">TemplatesJungle</a> <br> Distributed by: <a
-                        href="https://themewagon.com" class="link-primary" target="_blank">ThemeWagon</a></p>
-
-            </div>
+          
 
         </footer>
     </div>
