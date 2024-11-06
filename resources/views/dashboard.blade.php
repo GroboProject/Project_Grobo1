@@ -80,25 +80,25 @@
                 <div class="text-center col-lg-4">
                     <img src="{{ asset('tmplt/images/search.png') }}" class="bd-placeholder-img rounded-circle"
                         alt="Bootstrap Themes" width="140" height="140" loading="lazy">
-                    <h4 class="fw-normal mt-5 ">Easy to find</h4>
-                    <p>Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet
-                        facilisis.</p>
+                    <h4 class="fw-normal mt-5 ">Mudah Untuk Dipantau</h4>
+                    <p>Dengan GROBO, Anda dapat memantau kondisi tanaman Anda dari mana saja. Sistem kami memberikan data real-time tentang kelembapan tanah, 
+                      suhu, dan kondisi lainnya, memudahkan Anda mengelola kebun tanpa harus selalu berada di lokasi.</p>
                 </div>
 
                 <div class="text-center col-lg-4">
                     <img src="{{ asset('tmplt/images/price.png') }}" class="bd-placeholder-img rounded-circle"
                         alt="Bootstrap Themes" width="140" height="140" loading="lazy">
-                    <h4 class="fw-normal mt-5">Affordable Prices</h4>
-                    <p>Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet
-                        facilisis.</p>
+                    <h4 class="fw-normal mt-5">Efisien dan Hemat Biaya</h4>
+                    <p>GROBO membantu menghemat biaya operasional dengan sistem penyiraman otomatis yang tepat waktu dan hemat air. Dengan teknologi ini,
+                       kami membantu petani meningkatkan efisiensi dan mengurangi penggunaan sumber daya yang berlebihan.</p>
                 </div>
 
                 <div class="text-center col-lg-4">
                     <img src="{{ asset('tmplt/images/time.png') }}" class="bd-placeholder-img rounded-circle"
                         alt="Bootstrap Themes" width="140" height="140" loading="lazy">
-                    <h4 class="fw-normal mt-5 ">Quickly Process</h4>
-                    <p>Ac, gravida in diam vitae, nec mattis lectus quam pretium amet facilisis. Urna, massa aliqua dui
-                        pellentesque. </p>
+                    <h4 class="fw-normal mt-5 ">Proses Otomatis Cepat dan Akurat</h4>
+                    <p>Dengan proses otomatisasi yang presisi, GROBO memastikan setiap tanaman mendapatkan perawatan yang sesuai. Proses penyiraman dan 
+                      pemupukan dilakukan dengan cepat dan tepat, sehingga hasil panen lebih maksimal tanpa perlu intervensi manual. </p>
                 </div>
             </div>
         </div>
@@ -107,8 +107,6 @@
     <!-- Testimonial start  -->
     <section id="testimonial">
         <div class="container my-5">
-
-
 
             <div class="swiper testimonial-swiper">
                 <div class="swiper-wrapper">
