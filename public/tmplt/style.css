@@ -320,6 +320,66 @@ button.btn.btn-primary.btn-lg.billboard-search {
 
 }
 
+/*---- community section start ----  */
+.row.community-row {
+  display: flex;
+}
+
+.form-select {
+  border: 1px solid transparent;
+  border-radius: none;
+}
+
+.form-select:focus {
+  border-color: transparent;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem transparent;
+}
+
+.community-select {
+  border-right: 1px solid #E8E8E8;
+  padding-right: 20px;
+  padding-top: 25px;
+}
+
+.community-btn {
+  padding-left: 0px;
+}
+
+nav.navbar.navbar-expand-lg.community-nav {
+  min-width: 782px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background: #fff;
+}
+
+button.btn.btn-primary.btn-lg.community-search {
+  padding: 24px;
+  border: 5px solid white;
+  width: 100%;
+}
+
+#community {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav.navbar.navbar-expand-lg.community-nav {
+    min-width: 20%;
+  }
+
+  .community-select {
+    border-right: none;
+  }
+
+  .community-btn {
+    padding-left: 12px;
+  }
+
+}
+/*---- community section end ----  */
 
 
 /*---- residence section start ----  */
