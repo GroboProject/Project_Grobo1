@@ -116,14 +116,13 @@
                             <div class="col-md-8 mx-auto">
                                 <img src="{{ asset('tmplt/images/quote.png') }}" class="rounded mx-auto d-inline"
                                     alt="...">
-                                <p class="testimonial-p mt-4">Massa semper non rutrum orci facilisi sit. Lectus porta quam
-                                    a fringilla
-                                    eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
+                                <p class="testimonial-p mt-4">GROBO menghadirkan inovasi yang sangat membantu dalam sektor pertanian. Dengan otomatisasi yang canggih, sistem ini telah mempercepat proses kerja dan 
+                                  meningkatkan hasil produksi secara signifikan. Kami bangga menjadi bagian dari masa depan pertanian modern bersama GROBO.</p>
 
                                 <div class="row">
                                     <div class="col-md-8">
-                                        <p class="pt-5 mb-1">Elena Pravo</p>
-                                        <p class="">Ceo, Upstate</p>
+                                        <p class="pt-5 mb-1">James</p>
+                                        <p class="">Ceo, GROBO</p>
                                     </div>
                                 </div>
                             </div>
@@ -131,46 +130,22 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="row my-5 py-lg-5">
-                            <div class="col-md-8 mx-auto">
-                                <img src="{{ asset('tmplt/images/quote.png') }}" class="rounded mx-auto d-inline"
-                                    alt="...">
-                                <p class="testimonial-p mt-4">Massa semper non rutrum orci facilisi sit. Lectus porta quam
-                                    a fringilla
-                                    eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
-
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <p class="pt-5 mb-1">Elena Pravo</p>
-                                        <p class="">Ceo, Upstate</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="row my-5 py-lg-5">
-                            <div class="col-md-8 mx-auto">
-                                <img src="{{ asset('tmplt/images/quote.png') }}" class="rounded mx-auto d-inline"
-                                    alt="...">
-                                <p class="testimonial-p mt-4">Massa semper non rutrum orci facilisi sit. Lectus porta quam
-                                    a fringilla
-                                    eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
-
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <p class="pt-5 mb-1">Elena Pravo</p>
-                                        <p class="">Ceo, Upstate</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
+                      <div class="row my-5 py-lg-5">
+                          <div class="col-md-8 mx-auto">
+                              <img src="{{ asset('tmplt/images/quote.png') }}" class="rounded mx-auto d-inline" alt="...">
+                              <p class="testimonial-p mt-4">
+                                  "Bekerja di GROBO memberikan kesempatan bagi saya untuk menjadi bagian dari revolusi pertanian. Dengan teknologi otomatisasi yang kami kembangkan, kami berupaya membantu petani memanfaatkan sumber daya secara lebih efisien, sambil meningkatkan hasil panen dan kualitas hidup mereka."
+                              </p>
+                  
+                              <div class="row">
+                                  <div class="col-md-8">
+                                      <p class="pt-5 mb-1">Tim RPL</p>
+                                      <p class="">Kelompok 8</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
                 </div>
 
                 <div class=" testimonial-swiper-button col-md-3 position-absolute">
