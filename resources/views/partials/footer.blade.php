@@ -3,7 +3,7 @@
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5  ">
 
             <div class=" col-md-4">
-                <h3><img src="{{ asset('tmplt/images/logo.png') }}" alt="image"></h3>
+                <h3><img src="{{ asset('assets/jpg/logo.png') }}" alt="image" style="width: 125px;"></h3>
                 <p>Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue.</p>
                 <i class="bi-facebook pe-4"></i>
                 <i class="bi-instagram pe-4"></i>
