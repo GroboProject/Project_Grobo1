@@ -3,7 +3,7 @@
 
         <div class="container ">
 
-            <a class="navbar-brand" href="./index.html"><img src="{{ asset('tmplt/images/logo.png') }}" alt="Logo"></a>
+            <a class="navbar-brand" href="./index.html"><img src="{{ asset('assets/jpg/logo.png') }}" alt="Logo"></a>
 
 
             <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
