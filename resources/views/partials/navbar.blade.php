@@ -72,18 +72,6 @@
                                                     <img class="mb-4" src="{{ asset('tmplt/images/logo.png') }}"
                                                         alt="Logo">
                                                 </div>
-                                                <div class="nav nav-tabs d-flex justify-content-center border-0"
-                                                    id="nav-tab" role="tablist">
-                                                    <button class="btn btn-outline-primary text-uppercase me-3 active"
-                                                        id="nav-sign-in-tab" data-bs-toggle="tab"
-                                                        data-bs-target="#nav-sign-in" type="button" role="tab"
-                                                        aria-controls="nav-sign-in" aria-selected="true">Log In</button>
-                                                    <button class="btn btn-outline-primary text-uppercase"
-                                                        id="nav-register-tab" data-bs-toggle="tab"
-                                                        data-bs-target="#nav-register" type="button" role="tab"
-                                                        aria-controls="nav-register" aria-selected="false">Sign
-                                                        Up</button>
-                                                </div>
                                             </nav>
                                             <div class="tab-content" id="nav-tabContent">
                                                 <div class="tab-pane fade active show" id="nav-sign-in"
@@ -181,19 +169,6 @@
                                                     <img class="mb-4" src="{{ asset('tmplt/images/logo.png') }}"
                                                         alt="Logo">
                                                 </div>
-                                                <div class="nav nav-tabs d-flex justify-content-center border-0"
-                                                    id="nav-tab2" role="tablist">
-                                                    <button class="btn btn-outline-primary text-uppercase me-4 "
-                                                        id="nav-sign-in-tab2" data-bs-toggle="tab"
-                                                        data-bs-target="#nav-sign-in2" type="button" role="tab"
-                                                        aria-controls="nav-sign-in2" aria-selected="false">Log
-                                                        In</button>
-                                                    <button class="btn btn-outline-primary text-uppercase active"
-                                                        id="nav-register-tab2" data-bs-toggle="tab"
-                                                        data-bs-target="#nav-register2" type="button" role="tab"
-                                                        aria-controls="nav-register2" aria-selected="true">Sign
-                                                        Up</button>
-                                                </div>
                                             </nav>
                                             <div class="tab-content" id="nav-tabContent1">
                                                 <div class="tab-pane fade " id="nav-sign-in2" role="tabpanel"
@@ -259,8 +234,8 @@
                                                         </label>
                                                         <div class="d-grid my-3">
                                                             <button
-                                                                class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Sign
-                                                                Up</button>
+                                                                class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Registrasi
+                                                            </button>
                                                         </div>
                                                     </form>
                                                 </div>
