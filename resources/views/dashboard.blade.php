@@ -270,7 +270,7 @@
                             menciptakan perubahan yang berarti. Dengan keahlian, ide, dan semangat Anda, kita bisa membuka
                             peluang baru, menghasilkan inovasi, dan mewujudkan proyek yang lebih besar. Bersama-sama, kita
                             tidak hanya bekerja, tetapi juga tumbuh dan belajar.</p>
-                        <a href="index.html" class="btn btn-primary btn-lg px-4 me-md-2">Join With Us</a>
+                        <a href="/apply" class="btn btn-primary btn-lg px-4 me-md-2">Join With Us</a>
                     </div>
                 </div>
             </div>

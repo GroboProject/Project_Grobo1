@@ -23,21 +23,21 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav align-items-center justify-content-end align-items-center flex-grow-1 ">
                         <li class="nav-item">
-                            <a class="nav-link me-md-4" href="/">Home</a>
+                            <a class="nav-link me-md-4 {{ request()->is('/') ? 'active' : '' }}" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-md-4" href="{{ route('community') }}">Community</a>
+                            <a class="nav-link me-md-4 {{ request()->is('community') ? 'active' : '' }}" href="/community">Community</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-md-4" href="{{ route('news') }}">News</a>
+                            <a class="nav-link me-md-4 {{ request()->is('news') ? 'active' : '' }}" href="/news">News</a>
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link me-md-4 text-center" data-bs-toggle="dropdown" href="#"
                                 role="button" aria-expanded="false">About</a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a href="{{ route('about') }}" class="dropdown-item">About Grove</a>
+                                <li><a href="/about" class="dropdown-item">About Grove</a>
                                 </li>
-                                <li><a href="{{ route('contact') }}" class="dropdown-item">Contact us</a>
+                                <li><a href="/contact " class="dropdown-item">Contact us</a>
                                 </li>
                             </ul>
                         </li>
@@ -45,9 +45,9 @@
                             <a class="nav-link me-md-4 text-center" data-bs-toggle="dropdown" href="#"
                                 role="button" aria-expanded="false">Become a Distributor</a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a href="{{ route('apply') }}" class="dropdown-item">Apply Now</a>
+                                <li><a href="/apply" class="dropdown-item">Apply Now</a>
                                 </li>
-                                <li><a href="{{ route('disnet') }}" class="dropdown-item">Distributor Network</a>
+                                <li><a href="/network" class="dropdown-item">Distributor Network</a>
                                 </li>
                             </ul>
                         </li>
