@@ -2,10 +2,10 @@
     <nav id="navbar-example2" class="navbar navbar-expand-lg py-2">
 
         <div class="container ">
-
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand" href="/">
                 <img src="{{ asset('assets/jpg/logo.png') }}" alt="Logo" class="logo-img">
             </a>            
+
 
 
             <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
@@ -23,21 +23,21 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav align-items-center justify-content-end align-items-center flex-grow-1 ">
                         <li class="nav-item">
-                            <a class="nav-link active me-md-4" href="#billboard">Home</a>
+                            <a class="nav-link me-md-4 {{ request()->is('/') ? 'active' : '' }}" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-md-4" href="#residence">Community</a>
+                            <a class="nav-link me-md-4 {{ request()->is('community') ? 'active' : '' }}" href="/community">Community</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-md-4" href="#about-us">News</a>
+                            <a class="nav-link me-md-4 {{ request()->is('news') ? 'active' : '' }}" href="/news">News</a>
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link me-md-4 text-center" data-bs-toggle="dropdown" href="#"
                                 role="button" aria-expanded="false">About</a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a href="index.html" class="dropdown-item">Contact us</a>
+                                <li><a href="/about" class="dropdown-item">About Grove</a>
                                 </li>
-                                <li><a href="index.html" class="dropdown-item">Service</a>
+                                <li><a href="/contact " class="dropdown-item">Contact us</a>
                                 </li>
                             </ul>
                         </li>
@@ -45,9 +45,9 @@
                             <a class="nav-link me-md-4 text-center" data-bs-toggle="dropdown" href="#"
                                 role="button" aria-expanded="false">Become a Distributor</a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a href="index.html" class="dropdown-item">Apply Now</a>
+                                <li><a href="/apply" class="dropdown-item">Apply Now</a>
                                 </li>
-                                <li><a href="index.html" class="dropdown-item">Distributor Network</a>
+                                <li><a href="/network" class="dropdown-item">Distributor Network</a>
                                 </li>
                             </ul>
                         </li>
@@ -69,8 +69,8 @@
                                         <div class="tabs-listing mt-4">
                                             <nav>
                                                 <div class="d-flex justify-content-center">
-                                                    <img class="mb-4" src="{{ asset('tmplt/images/logo.png') }}"
-                                                        alt="Logo">
+                                                    <img class="mb-4 rounded-circle" src="{{ asset('assets/jpg/logo.png') }}"
+                                                        alt="Logo" style="max-width: 114px;">
                                                 </div>
                                             </nav>
                                             <div class="tab-content" id="nav-tabContent">
@@ -165,9 +165,9 @@
                                     <div class="modal-body">
                                         <div class="tabs-listing mt-4">
                                             <nav>
-                                                <div class="d-flex justify-content-center">
-                                                    <img class="mb-4" src="{{ asset('tmplt/images/logo.png') }}"
-                                                        alt="Logo">
+                                                <div class="d-flex justify-content-center" >
+                                                    <img class="mb-4 rounded-circle" src="{{ asset('assets/jpg/logo.png') }}"
+                                                        alt="Logo" style="max-width: 114px;">
                                                 </div>
                                             </nav>
                                             <div class="tab-content" id="nav-tabContent1">
