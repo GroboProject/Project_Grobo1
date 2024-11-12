@@ -35,8 +35,12 @@ Route::get('/contact', function () {
 
 Route::get('/apply', function () {
     return view('apply'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
-})->name('apply');
+});
 
 Route::get('/disnet', function () {
     return view('disNetwork'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
-})->name('disnet');
+});
+
+Route::get('/isiberita', function () {
+    return view('isiBerita'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+});
