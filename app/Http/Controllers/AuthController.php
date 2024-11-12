@@ -61,7 +61,7 @@ class AuthController extends Controller
     // Proses registrasi
     public function register(Request $request)
     {
-        // Validasi input registrasi
+        // Validasi input registrasi    
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
