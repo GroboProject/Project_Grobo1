@@ -48,13 +48,20 @@
                         </li>
                         <!-- Jika pengguna telah login -->
                         @auth
-                            <li class="nav-item d-flex align-items-center">
-                                <span class="me-3">Hallo, {{ Auth::user()->name }}</span>
-                                <form action="{{ route('logout') }}" method="POST" class="d-inline">
-                                    @csrf
-                                    <button type="submit" class="btn btn-outline-dark">Logout</button>
-                                </form>
-                            </li>
+                            <ul class="navbar-nav mx-2" id="exampleAccordion">
+                                <li class="nav-item dropdown" data-toggle="tooltip" data-placement="right">
+                                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-fw fa-user"></i>
+                                        <span class="nav-link-text text-light user-name">Hi, {{ Auth::user()->name }}</span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                                        <a class="dropdown-item" href="{{ route('logout') }}">
+                                            <i class="fa fa-fw fa-sign-out"></i> Logout
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
                         @else
                             <!-- Jika pengguna belum login -->
                             <li class="nav-item">
@@ -77,13 +84,14 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="tabs-listing mt-4">
                             <div class="d-flex justify-content-center">
-                                <img class="mb-4 rounded-circle" src="{{ asset('assets/jpg/logo.png') }}" alt="Logo"
-                                    style="max-width: 114px;">
+                                <img class="mb-4 rounded-circle" src="{{ asset('assets/jpg/logo.png') }}"
+                                    alt="Logo" style="max-width: 114px;">
                             </div>
                             @if ($errors->any())
                                 <div class="alert alert-danger">
@@ -172,14 +180,21 @@
                                     <input type="password" id="registerPassword" name="password"
                                         placeholder="Password" class="form-control ps-3">
                                 </div>
+                                <div class="form-input col-lg-12 my-4">
+                                    <label for="registerPasswordConfirm"
+                                        class="form-label fs-6 text-uppercase fw-bold text-black">Confirm
+                                        Password</label>
+                                    <input type="password" id="registerPasswordConfirm" name="password_confirmation"
+                                        placeholder="Confirm Password" class="form-control ps-3">
+                                </div>
                                 <label class="py-3">
                                     <input type="checkbox" class="d-inline">
                                     <span class="label-body text-black">I agree to the <a href="#"
                                             class="text-black password border-bottom">Privacy Policy</a></span>
                                 </label>
                                 <div class="d-grid my-3">
-                                    <button class="btn btn-primary btn-lg btn-dark text-uppercase fs-6">Sign
-                                        Up</button>
+                                    <button
+                                        class="btn btn-primary btn-lg btn-dark text-uppercase fs-6">Register</button>
                                 </div>
                             </form>
                         </div>
