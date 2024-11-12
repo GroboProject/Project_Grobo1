@@ -276,4 +276,14 @@
             </div>
         </div>
     </section>
+
+    @if (Session::has('success'))
+        <script>
+            Swal.fire({
+                title: 'Logout Successful!',
+                text: '{{ Session::get('success') }}',
+                icon: 'success'
+            });
+        </script>
+    @endif
 @endSection

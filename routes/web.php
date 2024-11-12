@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,30 +15,39 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Routes untuk tampilan utama
 Route::get('/', function () {
     return view('dashboard');
-});
+})->name('dashboard');
 
 Route::get('/community', function () {
-    return view('community'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+    return view('community');
 });
 
 Route::get('/news', function () {
-    return view('news'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+    return view('news');
 });
 
 Route::get('/about', function () {
-    return view('about'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+    return view('about');
 });
 
 Route::get('/contact', function () {
-    return view('contact'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+    return view('contact');
 });
 
 Route::get('/apply', function () {
-    return view('apply'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+    return view('apply');
 })->name('apply');
 
 Route::get('/disnet', function () {
-    return view('disNetwork'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+    return view('disNetwork');
 })->name('disnet');
+
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login'); // Rute untuk menampilkan form login
+Route::post('/login', [AuthController::class, 'login'])->name('login.submit'); // Rute untuk memproses login
+
+Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register'); // Rute untuk menampilkan form registrasi
+Route::post('/register', [AuthController::class, 'register'])->name('register.submit'); // Rute untuk memproses registrasi
+
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');// Rute untuk logout
