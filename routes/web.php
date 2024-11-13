@@ -37,7 +37,6 @@ Route::get('/contact', function () {
 });
 
 Route::get('/apply', function () {
-
     return view('apply');
 })->name('apply');
 
@@ -51,6 +50,7 @@ Route::post('/login', [AuthController::class, 'login'])->name('login.submit'); /
 Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register'); // Rute untuk menampilkan form registrasi
 Route::post('/register', [AuthController::class, 'register'])->name('register.submit'); // Rute untuk memproses registrasi
 
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');// Rute untuk logout
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');// Rute untuk logout
 
     return view('apply'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
@@ -63,3 +63,4 @@ Route::get('/disnet', function () {
 Route::get('/isiberita', function () {
     return view('isiBerita'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
 });
+

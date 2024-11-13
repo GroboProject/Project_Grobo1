@@ -28,15 +28,12 @@ class AuthController extends Controller
 
         ]);
 
-        $credentials = [
+        $infologin = [
             'email' => $request->email,
             'password' => $request->password,
         ];
 
-        // Menggunakan 'remember me' 
-        $credentials = $request->only('email', 'password');
-
-        if (Auth::attempt($credentials, $request->remember)) {
+        if (Auth::attempt($infologin)) {
             $user = Auth::user(); // Dapatkan informasi pengguna yang berhasil login
             Session::put('user_role', $user->role); // Simpan hak akses pengguna dalam sesi
 

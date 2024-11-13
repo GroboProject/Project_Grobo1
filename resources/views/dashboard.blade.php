@@ -30,30 +30,23 @@
                     <h2 class=" text-capitalize m-0">Featured In</h2>
                 </div>
             </div>
-            <div class="row d-flex justify-content-between">
-                <div class="col-md-2 ">
-                    <div class="my-3" role="group" aria-label="3 / 7" style="width: 158.667px; margin-right: 20px;"><img
-                            alt="image" src="{{ asset('tmplt/images/logo1.png') }}"></div>
+            <div class="row d-flex justify-content-center align-items-center gap-5">
+                <div class="col-md-2 d-flex justify-content-center">
+                    <div class="my-3 mt-5 gap-5" role="group" aria-label="3 / 7" style="width: 158.667px;">
+                        <img alt="image" src="{{ asset('assets/jpg/sv.png') }}" style="width: 200%; margin-top: 13px; margin-left: -120px;">
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <div class="my-3" role="group" aria-label="3 / 7" style="width: 158.667px; margin-right: 20px;"><img
-                            alt="image" src="{{ asset('tmplt/images/logo2.png') }}"></div>
+                <div class="col-md-2 d-flex justify-content-center">
+                    <div class="my-3 mb-1" role="group" aria-label="3 / 7" style="width: 158.667px;">
+                        <img alt="image" src="{{ asset('assets/jpg/ipb.png') }}" style="width: 100%; margin-left: 20px;">
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <div class="my-3" role="group" aria-label="3 / 7" style="width: 158.667px; margin-right: 20px;"><img
-                            alt="image" src="{{ asset('tmplt/images/logo3.png') }}"></div>
+                <div class="col-md-2 d-flex justify-content-center">
+                    <div class="my-3" role="group" aria-label="3 / 7" style="width: 158.667px;">
+                        <img alt="image" src="{{ asset('assets/jpg/tekom.png') }}" style="width: 105%;">
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <div class="my-3" role="group" aria-label="3 / 7" style="width: 158.667px; margin-right: 20px;"><img
-                            alt="image" src="{{ asset('tmplt/images/logo4.png') }}"></div>
-                </div>
-                <div class="col-md-2">
-                    <div class="my-3" role="group" aria-label="3 / 7" style="width: 158.667px; margin-right: 20px;"><img
-                            alt="image" src="{{ asset('tmplt/images/logo6.png') }}"></div>
-                </div>
-
-
-            </div>
+            </div>            
         </div>
     </section>
 
