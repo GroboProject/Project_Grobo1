@@ -12,7 +12,7 @@ class AuthController extends Controller
     // Menampilkan form login
     public function showLoginForm()
     {
-        return view('login');
+        return view('dashboard');
     }
 
     // Proses login
