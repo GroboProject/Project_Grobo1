@@ -43,7 +43,7 @@
                                 role="button" aria-expanded="false">Become a Distributor</a>
                             <ul class="dropdown-menu dropdown-menu-dark">
                                 <li><a href="/apply" class="dropdown-item">Apply Now</a></li>
-                                <li><a href="/network" class="dropdown-item">Distributor Network</a></li>
+                                <li><a href="/disnet" class="dropdown-item">Distributor Network</a></li>
                             </ul>
                         </li>
                         <!-- Jika pengguna telah login -->
