@@ -308,6 +308,17 @@ button.btn.btn-primary.btn-lg.billboard-search {
     }
 }
 
+/*---- billboard section end ----  */
+
+/*---- globe section start ----  */
+#globe {
+    height: 68vh; /* Menyesuaikan tinggi dengan gambar */
+    padding: 0; /* Menghapus padding yang mungkin memperbesar section */
+}
+/*---- globe section end ----  */
+
+
+
 /* about background start*/
 .row.about-row {
     display: flex;

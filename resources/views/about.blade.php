@@ -8,33 +8,22 @@
             <p>Deskripsi atau informasi lainnya yang muncul di atas background.</p>
         </div>
     </section>
-    
+
 
     <!-- Feature start  -->
-    <section id="feature">
-        <div class="container py-5">
+    <section id="tentang" style="background-color: #1A242F">
+        <div class="container py-5 ">
             <div class="row">
-                <div class="section-header align-center mb-5">
-                    <h2 class=" text-capitalize m-0">Featured In</h2>
+                <div class="section-header align-center mb-5 text-center">
+                    <h2 class=" text-capitalize m-0 mb-4">GROBO</h2>
+                    <p>Grobo adalah sebuah situs web yang memberikan informasi terkait proyek alat pertanian yang kami kembangkan. Situs ini dilengkapi dengan berbagai fitur, seperti penyampaian berita terkini mengenai alat yang kami ciptakan, informasi spesifikasi alat, serta layanan untuk bermitra atau menjadi distributor alat tersebut. Selain itu, Grobo juga berfungsi sebagai platform untuk mempromosikan inovasi teknologi pertanian, menjembatani kolaborasi antara petani dan distributor, serta memberikan dukungan bagi komunitas yang ingin berkontribusi dalam pengembangan teknologi pertanian yang berkelanjutan. Kami berkomitmen untuk menjadi solusi terdepan dalam mendukung pertanian modern.</p>
                 </div>
             </div>
-            </div>
+        </div>
         </div>
     </section>
 
     <!-- Residence start  -->
-    <section id="residence">
-        <div class="container my-5 py-5 text-center">
-            <h2 class="text-capitalize m-0 py-lg-5">Spesifikasi dari Grobo</h2>
-
-            <div class="video-box mb-5">
-                <video class="video-content" src="{{ asset('assets/jpg/blast-2-unscreen.gif') }}"
-                    poster="{{ asset('assets/jpg/blast-2-unscreen.gif') }}" playsinline muted autoplay="false"
-                    loop="false" style="width: 100%; max-width: 800px; z-index: 0;"></video>
-            </div>
-    </section>
-
-
     <!--About us start  -->
     <section id="about-us">
         <div class="container">
@@ -75,68 +64,6 @@
     </section>
 
     <!-- Testimonial start  -->
-    <section id="testimonial">
-        <div class="container my-5">
-
-            <div class="swiper testimonial-swiper">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="row my-5 py-lg-5">
-                            <div class="col-md-8 mx-auto">
-                                <img src="{{ asset('tmplt/images/quote.png') }}" class="rounded mx-auto d-inline"
-                                    alt="...">
-                                <p class="testimonial-p mt-4">GROBO menghadirkan inovasi yang sangat membantu dalam sektor
-                                    pertanian. Dengan otomatisasi yang canggih, sistem ini telah mempercepat proses kerja
-                                    dan
-                                    meningkatkan hasil produksi secara signifikan. Kami bangga menjadi bagian dari masa
-                                    depan pertanian modern bersama GROBO.</p>
-
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <p class="pt-5 mb-1">James</p>
-                                        <p class="">Ceo, GROBO</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="row my-5 py-lg-5">
-                            <div class="col-md-8 mx-auto">
-                                <img src="{{ asset('tmplt/images/quote.png') }}" class="rounded mx-auto d-inline"
-                                    alt="...">
-                                <p class="testimonial-p mt-4">
-                                    "Bekerja di GROBO memberikan kesempatan bagi saya untuk menjadi bagian dari revolusi
-                                    pertanian. Dengan teknologi otomatisasi yang kami kembangkan, kami berupaya membantu
-                                    petani memanfaatkan sumber daya secara lebih efisien, sambil meningkatkan hasil panen
-                                    dan kualitas hidup mereka."
-                                </p>
-
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <p class="pt-5 mb-1">Tim RPL</p>
-                                        <p class="">Kelompok 8</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=" testimonial-swiper-button col-md-3 position-absolute">
-                    <div class="swiper-button-prev testimonial-arrow"></div>
-                    <div class="arrow-divider"> | </div>
-                    <div class="swiper-button-next testimonial-arrow"></div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
     <!-- Help start  -->
     <section id="help" class="py-5"
         style="background: linear-gradient(270deg, #1A242F 0.01%, rgba(26, 36, 47, 0.00) 100%);">
@@ -223,22 +150,22 @@
     </section>
 
     <!-- Lets start  -->
-    <section id="start">
-        <div class="container my-5 py-5">
-            <div class="row featurette py-lg-5 ">
-                <div class="col-md-5 order-md-1 d-flex">
-                    <h1 class="text-capitalize  lh-1 mb-3">Come collaborate with us</h1>
-                </div>
-                <div class="col-md-7 order-md-2">
-                    <div class="text-content ps-md-5 mt-4 mt-md-0">
-                        <p class="py-lg-2">Kami percaya bahwa kolaborasi adalah kunci untuk meraih hasil terbaik dan
-                            menciptakan perubahan yang berarti. Dengan keahlian, ide, dan semangat Anda, kita bisa membuka
-                            peluang baru, menghasilkan inovasi, dan mewujudkan proyek yang lebih besar. Bersama-sama, kita
-                            tidak hanya bekerja, tetapi juga tumbuh dan belajar.</p>
-                        <a href="/apply" class="btn btn-primary btn-lg px-4 me-md-2">Join With Us</a>
-                    </div>
-                </div>
+    <section id="social-media" class="py-5" style="background-color: #121b25;">
+        <div class="container text-center text-white">
+            <!-- Heading -->
+            <h2 class="mb-4 fw-bold">Our Social Media</h2>
+
+            <!-- Icons Section -->
+            <div class="d-flex justify-content-center align-items-center gap-4 py-4">
+                <a href="#" class="text-white fs-3">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" class="text-white fs-3">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="text-white fs-3">
+                    <i class="bi bi-twitter"></i>
+                </a>
             </div>
         </div>
-    </section>
-@endSection
+    @endSection
