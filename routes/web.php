@@ -61,3 +61,7 @@ Route::get('/isiberita', function () {
     return view('isiBerita'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
 });
 
+Route::get('/specification', function () {
+    return view('specification'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+});
+

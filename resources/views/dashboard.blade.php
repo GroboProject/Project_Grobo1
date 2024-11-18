@@ -13,10 +13,8 @@
 
                 <div class="col-lg-6">
                     <h1 class=" text-capitalize  lh-1 my-3">Merevolusi Pertanian dengan Otomasi Cerdas</h1>
-                    <p class="lead">Perkenalkan GROBO, robot penyiraman otomatis yang menghadirkan irigasi presisi ke
-                        dunia pertanian modern. Dirancang untuk bekerja tanpa lelah dalam segala cuaca, GROBO mengoptimalkan
-                        penggunaan air,
-                        mengurangi kerja manual, dan meningkatkan hasil panen dengan mudah.</p>
+                    <p class="lead">Perkenalkan salah satu inovasi terbaru dari kami, yaitu GROVE, alat gerak pada lahan pertanian kering
+                        dunia pertanian modern. Dirancang untuk buntuk mempermudah pekerjaan di lahan pertanian kering. Dengan desain modern dan teknologi canggih, GROVE mampu menampung beban hingga 100 kg dan berputar 360 derajat untuk manuver maksimal. Dikendalikan dengan remote kontrol, alat ini dirancang untuk menghemat tenaga dan waktu Anda, menjadikan aktivitas bertani lebih efisien dan praktis. Jadikan GROVE solusi andalan Anda di bidang pertanian!</p>
                 </div>
             </div>
         </div>
@@ -54,12 +52,12 @@
     <!-- Residence start  -->
     <section id="residence">
         <div class="container my-5 py-5 text-center">
-            <h2 class="text-capitalize m-0 py-lg-5">Spesifikasi dari Grobo</h2>
+            <h2 class="text-capitalize m-0 py-lg-5">Spesifikasi dari GROVE</h2>
 
             <div class="video-box mb-5">
-                <video class="video-content" src="{{ asset('assets/jpg/blast-2-unscreen.gif') }}"
+                <a href="/specification"><video class="video-content" src="{{ asset('assets/jpg/blast-2-unscreen.gif') }}"
                     poster="{{ asset('assets/jpg/blast-2-unscreen.gif') }}" playsinline muted autoplay="false"
-                    loop="false" style="width: 100%; max-width: 800px; z-index: 0;"></video>
+                    loop="false" style="width: 100%; max-width: 800px; z-index: 0;"></video></a>
             </div>
     </section>
 
@@ -74,30 +72,23 @@
                 <div class="text-center col-lg-4">
                     <img src="{{ asset('tmplt/images/search.png') }}" class="bd-placeholder-img rounded-circle"
                         alt="Bootstrap Themes" width="140" height="140" loading="lazy">
-                    <h4 class="fw-normal mt-5 ">Mudah Untuk Dipantau</h4>
-                    <p>Dengan GROBO, Anda dapat memantau kondisi tanaman Anda dari mana saja. Sistem kami memberikan data
-                        real-time tentang kelembapan tanah,
-                        suhu, dan kondisi lainnya, memudahkan Anda mengelola kebun tanpa harus selalu berada di lokasi.</p>
+                    <h4 class="fw-normal mt-5 ">Presisi dan Akurat</h4>
+                    <p>Teknologi canggih GROVE memastikan setiap pekerjaan dilakukan dengan presisi dan akurasi tinggi, membantu Anda mengelola lahan secara efisien. Setiap fitur dirancang untuk memberikan hasil terbaik, menjadikan alat ini solusi sempurna bagi petani modern.</p>
                 </div>
 
                 <div class="text-center col-lg-4">
                     <img src="{{ asset('tmplt/images/price.png') }}" class="bd-placeholder-img rounded-circle"
                         alt="Bootstrap Themes" width="140" height="140" loading="lazy">
-                    <h4 class="fw-normal mt-5">Efisien dan Hemat Biaya</h4>
-                    <p>GROBO membantu menghemat biaya operasional dengan sistem penyiraman otomatis yang tepat waktu dan
-                        hemat air. Dengan teknologi ini,
-                        kami membantu petani meningkatkan efisiensi dan mengurangi penggunaan sumber daya yang berlebihan.
+                    <h4 class="fw-normal mt-5">Hemat Biaya</h4>
+                    <p>GROVE menawarkan solusi inovatif dengan harga yang kompetitif, memberikan nilai maksimal untuk setiap investasi Anda. Dengan kualitas terbaik dan fitur unggulan, GROVE tidak hanya menghemat tenaga, tetapi juga memberikan keuntungan lebih besar dalam jangka panjang.
                     </p>
                 </div>
 
                 <div class="text-center col-lg-4">
                     <img src="{{ asset('tmplt/images/time.png') }}" class="bd-placeholder-img rounded-circle"
                         alt="Bootstrap Themes" width="140" height="140" loading="lazy">
-                    <h4 class="fw-normal mt-5 ">Proses Otomatis Cepat dan Akurat</h4>
-                    <p>Dengan proses otomatisasi yang presisi, GROBO memastikan setiap tanaman mendapatkan perawatan yang
-                        sesuai. Proses penyiraman dan
-                        pemupukan dilakukan dengan cepat dan tepat, sehingga hasil panen lebih maksimal tanpa perlu
-                        intervensi manual. </p>
+                    <h4 class="fw-normal mt-5 ">Efisien dan Hemat Waktu</h4>
+                    <p>Didesain untuk menghemat waktu, GROVE bekerja cepat dan efisien, meningkatkan produktivitas Anda di lahan pertanian. Dengan kemampuan manuver 360 derajat dan kendali jarak jauh, pekerjaan menjadi lebih mudah, cepat, dan nyaman. </p>
                 </div>
             </div>
         </div>

@@ -62,8 +62,8 @@
                                     </div>
                                 </li>
                             </ul>
-                        @else
                             <!-- Jika pengguna belum login -->
+                        @else
                             <li class="nav-item">
                                 <a class="nav-link mx-md-4" href="#" data-bs-toggle="modal"
                                     data-bs-target="#loginModal">Login</a>
