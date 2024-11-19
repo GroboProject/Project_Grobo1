@@ -40,15 +40,15 @@
                                 required>
                         </div>
                         <div class="mb-3">
-                            <label for="message" class="form-label">Pesan  (Optional)</label>
+                            <label for="message" class="form-label">Pesan (Optional)</label>
                             <textarea class="form-control" id="message" rows="3" placeholder="Masukan Pesan"></textarea>
                         </div>
                     </form>
                 </div>
+              
 
-
-                <!-- Contact Info Section -->
-                {{-- <div class="mb-4">
+                    <!-- Contact Info Section -->
+                    {{-- <div class="mb-4">
                         <h3>Info Kontak</h3>
                         <form>
                             <div class="mb-3">

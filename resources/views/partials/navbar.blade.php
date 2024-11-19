@@ -42,10 +42,36 @@
                             <a class="nav-link me-md-4 text-center" data-bs-toggle="dropdown" href="#"
                                 role="button" aria-expanded="false">Become a Distributor</a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a href="/apply" class="dropdown-item">Apply Now</a></li>
+                                <li>
+                                    @auth
+                                        <a href="{{ route('apply') }}" class="dropdown-item">Apply Now</a>
+                                    @else
+                                        <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModals">Apply Now</a>
+                                    @endauth
+                                </li>
                                 <li><a href="/disnet" class="dropdown-item">Distributor Network</a></li>
                             </ul>
                         </li>
+                        <!-- Modal Harap Login -->
+                        <div class="modal fade" id="loginModals" tabindex="-1" aria-labelledby="loginModalLabel"
+                            aria-hidden="true" >
+                            <div class="modal-dialog">
+                                <div class="modal-content text-bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="loginModalLabel">Harap Login Terlebih Dahulu</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Anda harus login terlebih dahulu untuk mengakses fitur ini.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Tutup</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Jika pengguna telah login -->
                         @auth
                             <ul class="navbar-nav mx-2" id="exampleAccordion">
@@ -66,7 +92,7 @@
                         @else
                             <li class="nav-item">
                                 <a class="nav-link mx-md-4" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#loginModal">Login</a>
+                                    data-bs-target="#showLoginModal">Login</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link mx-md-4" href="#" data-bs-toggle="modal"
@@ -79,7 +105,7 @@
         </div>
 
         <!-- Login Modal -->
-        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true"
+        <div class="modal fade" id="showLoginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true"
             data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -108,8 +134,8 @@
                                 <div class="form-input col-lg-12 my-4">
                                     <label for="loginEmail"
                                         class="form-label fs-6 text-uppercase fw-bold text-black">Email Address</label>
-                                    <input type="text" id="loginEmail" value="{{ old('email') }}" name="email"
-                                        placeholder="Email" class="form-control ps-3">
+                                    <input type="text" id="loginEmail" value="{{ old('email') }}"
+                                        name="email" placeholder="Email" class="form-control ps-3">
                                 </div>
                                 <div class="form-input col-lg-12 my-4">
                                     <label for="loginPassword"
@@ -204,3 +230,18 @@
         </div>
     </nav>
 </header>
+<script>
+    function checkLogin() {
+        // Simulasi login status; ubah sesuai kebutuhan
+        const isLoggedIn = false; // Ubah menjadi true jika pengguna sudah login
+
+        if (!isLoggedIn) {
+            const loginModals = new bootstrap.Modal(document.getElementById('loginModals'));
+            loginModals.show();
+        } else {
+            // Arahkan ke halaman Apply Now jika sudah login
+            window.location.href = "/apply";
+        }
+    }
+</script>
+
