@@ -11,7 +11,7 @@
                 @foreach ($news as $item)
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="{{ Storage::url('gambar/DFB0lb3xh54ueitqWDshvgB5HaJW625AGAumjCBt.jpg') }}" class="card-img-top" alt="{{ $item->judul }}">
+                            <img src="{{ Storage::url('gambar/' . $item->gambar) }}" class="card-img-top" alt="{{ $item->judul }}">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $item->judul }}</h5>
                                 <p class="card-text">{!! Str::limit($item->isi, 100) !!}</p>
