@@ -15,7 +15,7 @@
                             <img class="img-fluid rounded" src="{{ Storage::url($news->gambar) }}" alt="{{ $news->judul }}" />
                         </figure>
                         <section class="mb-5">
-                            <p class="fs-5 mb-4">{!! nl2br(e($news->isi)) !!}</p>
+                            <p class="fs-5 mb-4">{{ nl2br(strip_tags($news->isi)) }}</p>
                         </section>
                     </article>
 
