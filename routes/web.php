@@ -3,7 +3,9 @@
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +27,9 @@ Route::get('/community', function () {
     return view('community');
 });
 
-Route::get('/news', function () {
-    return view('news');
-});
+Route::get('/news', [NewsController::class, 'index'])->name('news.index');
+Route::get('/news/{id}', [NewsController::class, 'show'])->name('news.show');
+
 
 Route::get('/about', function () {
     return view('about');
@@ -59,18 +61,29 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
 Route::get('/isiberita', function () {
-    return view('isiBerita'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+    return view('isiBerita'); 
 });
 
 Route::get('/specification', function () {
-    return view('specification'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+    return view('specification'); 
 });
 
-Route::get('/admin/base', [AdminController::class, 'admin'])->name('base');
-
-Route::get('/admin/tabelBerita', function () {
-    return view('admin.newsTable'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+Route::middleware(['auth', 'userAkses:admin'])->group(function () {
+    Route::get('/admin/base', [AdminController::class, 'admin'])->name('base');
+    Route::get('/admin/tabelBerita', [AdminController::class, 'newsTable'])->name('admin.newsTable');
+    Route::get('/admin/tambahBerita', [AdminController::class, 'addNews'])->name('admin.addNews');
+    Route::post('/admin/storeNews', [AdminController::class, 'storeNews'])->name('admin.storeNews');
+    Route::post('/admin/news', [NewsController::class, 'store'])->name('admin.news.store');
+    Route::put('/admin/news/{id}', [AdminController::class, 'updateNews'])->name('admin.news.update');
+    Route::delete('/admin/news/{id}', [AdminController::class, 'destroyNews'])->name('admin.news.destroy');
 });
-Route::get('/admin/tambahBerita', function () {
-    return view('admin.addNews'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+
+Route::get('gambar/{filename}', function ($filename) {
+    $path = storage_path('app/public/gambar/' . $filename);
+
+    if (file_exists($path)) {
+        return response()->file($path);
+    }
+
+    abort(404);
 });
