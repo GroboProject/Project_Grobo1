@@ -18,7 +18,7 @@ class NewsController extends Controller
     public function show($id)
     {
         $news = News::findOrFail($id); // Cari berita berdasarkan ID
-        return view('newsDetail', compact('news'));
+        return view('isiBerita', compact('news'));
     }
     public function store(Request $request)
     {
@@ -30,7 +30,7 @@ class NewsController extends Controller
         ]);
 
         // Simpan gambar ke storage
-        $path = $request->file('gambar')->store('news_images', 'public');
+        $path = $request->file('gambar')->store('gambar', 'public');
 
         // Simpan data ke database
         News::create([

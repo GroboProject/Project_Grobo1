@@ -60,10 +60,6 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
-Route::get('/isiberita', function () {
-    return view('isiBerita'); 
-});
-
 Route::get('/specification', function () {
     return view('specification'); 
 });
