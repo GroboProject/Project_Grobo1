@@ -79,12 +79,15 @@ class AuthController extends Controller
 
     // Proses logout
     public function logout()
-    {
-        Auth::logout();
-        // Menghapus session user_role
-        Session::forget('user_role');
+{
+    Auth::logout();  // Logout dari sesi
+    session()->invalidate();  // Hapus sesi yang masih aktif
+    session()->regenerateToken();  // Regenerasi token CSRF untuk keamanan
 
-        // Redirect ke halaman login setelah logout
-        return redirect()->route('dashboard')->with('success', 'Berhasil logout!');
-    }
+    // Hapus session terkait role
+    Session::forget('user_role');
+
+    // Redirect ke halaman login atau halaman depan setelah logout
+    return redirect()->route('login')->with('success', 'Berhasil logout!');
+}
 }

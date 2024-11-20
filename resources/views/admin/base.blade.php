@@ -124,11 +124,16 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                        <a id="logoutBtn" class="btn btn-primary" href="/">Logout</a>
+                        <!-- Form Logout dengan metode POST -->
+                        <form action="{{ route('logout') }}" method="POST" style="display:inline;">
+                            @csrf
+                            <button type="submit" class="btn btn-primary">Logout</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- Scripts -->
