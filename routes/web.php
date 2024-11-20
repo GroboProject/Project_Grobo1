@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Auth;
@@ -64,4 +65,6 @@ Route::get('/isiberita', function () {
 Route::get('/specification', function () {
     return view('specification'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
 });
+
+Route::get('/admin/base', [AdminController::class, 'admin'])->name('base');
 
