@@ -26,7 +26,7 @@
                                 <option selected disabled>Pilih Tipe Bisnis</option>
                                 <option value="1">Pertanian</option>
                                 <option value="2">Agroteknologi</option>
-                                <option value="3"></option>
+                                <option value="3">etc</option>
                             </select>
                         </div>
                         <div class="mb-3">

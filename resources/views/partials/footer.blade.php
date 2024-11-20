@@ -1,67 +1,48 @@
 <section id="footer">
     <div class="container footer-container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5  ">
-
-            <div class=" col-md-4">
-                <h3><img src="{{ asset('assets/jpg/logo.png') }}" alt="image" style="width: 125px; margin-bottom: 20px; margin-left: 30px;"></h3>
-                <i class="bi-facebook pe-4"></i>
-                <i class="bi-instagram pe-4"></i>
-                <i class="bi-twitter pe-4"></i>
-                <i class="bi-youtube pe-4"></i>
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+            <!-- Bagian Logo dan Sosial Media -->
+            <div class="col-md-4">
+                <h3>
+                    <img src="{{ asset('assets/jpg/logo.png') }}" alt="image"
+                        style="width: 125px; margin-bottom: 20px; margin-left: 30px;">
+                </h3>
+                <div class="social-icons" style="margin-left: 30px;">
+                    <i class="bi-facebook pe-4"></i>
+                    <i class="bi-instagram pe-4"></i>
+                    <i class="bi-twitter pe-4"></i>
+                    <i class="bi-youtube pe-4"></i>
+                </div>
             </div>
 
-            <div class="col-md-2 ">
-                <h5>Project</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Houses</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Rooms</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Flats</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Appartments</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-2 ">
-                <h5>Company</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">How we work ?</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Capital </a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Security </a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-2 ">
-                <h5>Movement</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Movement</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Support us</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-2 ">
-                <h5>Help</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Privacy </a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Condition</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Blog</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
+            <!-- Bagian Informasi Kontak -->
+            <div class="col-md-8">
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <i class="bi-geo-alt-fill pe-2"></i>
+                        Jl. Lodaya II, RT.02/RW.06, Babakan, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16128
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi-telephone-fill pe-2"></i>
+                        +62 812 3456 7890
+                    </li>
+                    <li>
+                        <i class="bi-envelope-fill pe-2"></i>
+                        grobo@gmail.com
+                    </li>
                 </ul>
             </div>
         </footer>
     </div>
 
-
-
     <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
 
+    <!-- Bagian Hak Cipta -->
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 ">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-2">
             <div class="col-md-8 d-flex align-items-center">
                 <p>© 2024 Grobo, Inc. All rights reserved.</p>
-
             </div>
-          
-
         </footer>
     </div>
 </section>

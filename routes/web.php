@@ -87,3 +87,19 @@ Route::get('gambar/{filename}', function ($filename) {
 
     abort(404);
 });
+
+Route::get('/admin/request', function () {
+    return view('/admin/request');
+})->name('request');
+
+Route::get('/admin/companyList', function () {
+    return view('/admin/companyList');
+})->name('companyList');
+
+Route::get('/admin/detail', function () {
+    return view('/admin/detail');
+})->name('detail');
+
+Route::get('/admin/detailCompany', function () {
+    return view('/admin/detailCompany');
+})->name('detailCompany');

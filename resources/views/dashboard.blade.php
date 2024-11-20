@@ -159,24 +159,25 @@
 
     <!-- Help start  -->
     <!-- Lets start  -->
-    <section id="start">
+    <section id="starts">
         <div class="container my-5 py-5">
-            <div class="row featurette py-lg-5 ">
-                <div class="col-md-5 order-md-1 d-flex">
-                    <h1 class="text-capitalize  lh-1 mb-3">Come collaborate with us</h1>
+            <div class="row featurette py-lg-5">
+                <!-- Kolom teks kiri -->
+                <div class="col-12 col-md-5 d-flex flex-column justify-content-center mb-4 mb-md-0">
+                    <h1 class="text-capitalize lh-1 mb-3">Come collaborate with us</h1>
                 </div>
-                <div class="col-md-7 order-md-2">
+                
+                <!-- Kolom teks kanan -->
+                <div class="col-12 col-md-7">
                     <div class="text-content ps-md-5 mt-4 mt-md-0">
-                        <p class="py-lg-2">Kami percaya bahwa kolaborasi adalah kunci untuk meraih hasil terbaik dan
-                            menciptakan perubahan yang berarti. Dengan keahlian, ide, dan semangat Anda, kita bisa membuka
-                            peluang baru, menghasilkan inovasi, dan mewujudkan proyek yang lebih besar. Bersama-sama, kita
-                            tidak hanya bekerja, tetapi juga tumbuh dan belajar.</p>
+                        <p class="py-lg-2">Kami percaya bahwa kolaborasi adalah kunci untuk meraih hasil terbaik dan menciptakan perubahan yang berarti. Dengan keahlian, ide, dan semangat Anda, kita bisa membuka peluang baru, menghasilkan inovasi, dan mewujudkan proyek yang lebih besar. Bersama-sama, kita tidak hanya bekerja, tetapi juga tumbuh dan belajar.</p>
                         <a href="/apply" class="btn btn-primary btn-lg px-4 me-md-2">Join With Us</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
     @if (Session::has('success'))
         <script>
