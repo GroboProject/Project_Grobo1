@@ -68,3 +68,9 @@ Route::get('/specification', function () {
 
 Route::get('/admin/base', [AdminController::class, 'admin'])->name('base');
 
+Route::get('/admin/tabelBerita', function () {
+    return view('admin.newsTable'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+});
+Route::get('/admin/tambahBerita', function () {
+    return view('admin.addNews'); // Sesuaikan dengan nama view yang Anda ingin tampilkan
+});
