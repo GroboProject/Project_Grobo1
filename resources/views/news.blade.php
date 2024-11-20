@@ -13,6 +13,7 @@
                         <div class="card">
                             <img src="{{ Storage::url('gambar/' . $item->gambar) }}" class="card-img-top"
                                 alt="{{ $item->judul }}">
+                            <img src="{{ Storage::url($item->gambar) }}" class="card-img-top" alt="{{ $item->judul }}">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $item->judul }}</h5>
                                 <p class="card-text">{!! Str::limit($item->isi, 100) !!}</p>
