@@ -49,7 +49,7 @@
                                         <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModals">Apply Now</a>
                                     @endauth
                                 </li>
-                                <li><a href="/disnet" class="dropdown-item">Distributor Network</a></li>
+                                <li><a href="/disNetwork" class="dropdown-item">Distributor Network</a></li>
                             </ul>
                         </li>
                         <!-- Modal Harap Login -->
@@ -146,10 +146,6 @@
                                         <a href="#" class="password">Forgot Password?</a>
                                     </div>
                                 </div>
-                                <label class="py-3">
-                                    <input type="checkbox" class="d-inline">
-                                    <span class="label-body text-black">Remember Me</span>
-                                </label>
                                 <div class="d-grid my-3">
                                     <button class="btn btn-primary btn-lg btn-dark text-uppercase fs-6">Log In</button>
                                 </div>
@@ -213,11 +209,6 @@
                                     <input type="password" id="registerPasswordConfirm" name="password_confirmation"
                                         placeholder="Confirm Password" class="form-control ps-3">
                                 </div>
-                                <label class="py-3">
-                                    <input type="checkbox" class="d-inline">
-                                    <span class="label-body text-black">I agree to the <a href="#"
-                                            class="text-black password border-bottom">Privacy Policy</a></span>
-                                </label>
                                 <div class="d-grid my-3">
                                     <button
                                         class="btn btn-primary btn-lg btn-dark text-uppercase fs-6">Register</button>

@@ -1,9 +1,11 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ApplyController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\RequestController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
@@ -39,9 +41,7 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/disnet', function () {
-    return view('disNetwork');
-})->name('disnet');
+Route::get('/disNetwork', [RequestController::class, 'showUserAppliedCompanies'])->name('distributionNetwork');
 
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login'); // Rute untuk menampilkan form login
@@ -54,6 +54,8 @@ Route::post('/register', [AuthController::class, 'register'])->name('register.su
 Route::get('/apply', function () {
     return view('apply');
 })->middleware('auth')->name('apply');
+Route::post('/apply', [ApplyController::class, 'submit'])->name('apply.submit');
+
 
 // Rute untuk logout
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
@@ -65,6 +67,8 @@ Route::get('/specification', function () {
 });
 
 Route::middleware(['auth', 'userAkses:admin'])->group(function () {
+
+    // route curd berita
     Route::get('/admin/base', [AdminController::class, 'admin'])->name('base');
     Route::get('/admin/tabelBerita', [AdminController::class, 'newsTable'])->name('admin.newsTable');
     Route::get('/admin/tambahBerita', [AdminController::class, 'addNews'])->name('admin.addNews');
@@ -72,6 +76,24 @@ Route::middleware(['auth', 'userAkses:admin'])->group(function () {
     Route::post('/admin/news', [NewsController::class, 'store'])->name('admin.news.store');
     Route::put('/admin/news/{id}', [AdminController::class, 'updateNews'])->name('admin.news.update');
     Route::delete('/admin/news/{id}', [AdminController::class, 'destroyNews'])->name('admin.news.destroy');
+
+    // User Request
+    Route::get('/request', [RequestController::class, 'showUserRequest'])->name('user.request');
+    Route::post('/request/submit', [RequestController::class, 'submitRequest'])->name('user.request.submit');
+    // Admin Request
+    Route::get('/admin/request', [RequestController::class, 'showAdminRequest'])->name('admin.request');
+    Route::get('/admin/request/{id}/detail', [RequestController::class, 'showRequestDetail'])->name('admin.request.detail');
+    Route::post('/admin/request/{id}/verify', [RequestController::class, 'verifyRequest'])->name('admin.request.verify');
+
+    // Delete PT
+    Route::delete('/admin/company/{id}', [RequestController::class, 'deleteCompany'])->name('admin.delete');
+
+
+    // Rute untuk menampilkan daftar perusahaan yang diterima (status 'approved')
+    Route::get('/admin/companyList', [RequestController::class, 'showAcceptedRequests'])->name('admin.companyList');
+    
+    // Rute untuk menampilkan detail perusahaan yang diterima
+    Route::get('/admin/companyList/{id}/detail', [RequestController::class, 'showCompanyDetail'])->name('admin.detail');
 });
 
 Route::get('gambar/{filename}', function ($filename) {
@@ -84,18 +106,3 @@ Route::get('gambar/{filename}', function ($filename) {
     abort(404);
 });
 
-Route::get('/admin/request', function () {
-    return view('/admin/request');
-})->name('request');
-
-Route::get('/admin/companyList', function () {
-    return view('/admin/companyList');
-})->name('companyList');
-
-Route::get('/admin/detail', function () {
-    return view('/admin/detail');
-})->name('detail');
-
-Route::get('/admin/detailCompany', function () {
-    return view('/admin/detailCompany');
-})->name('detailCompany');
