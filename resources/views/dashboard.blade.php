@@ -13,8 +13,13 @@
 
                 <div class="col-lg-6">
                     <h1 class=" text-capitalize  lh-1 my-3">Merevolusi Pertanian dengan Otomasi Cerdas</h1>
-                    <p class="lead">Perkenalkan salah satu inovasi terbaru dari kami, yaitu GROVE, alat gerak pada lahan pertanian kering
-                        dunia pertanian modern. Dirancang untuk buntuk mempermudah pekerjaan di lahan pertanian kering. Dengan desain modern dan teknologi canggih, GROVE mampu menampung beban hingga 100 kg dan berputar 360 derajat untuk manuver maksimal. Dikendalikan dengan remote kontrol, alat ini dirancang untuk menghemat tenaga dan waktu Anda, menjadikan aktivitas bertani lebih efisien dan praktis. Jadikan GROVE solusi andalan Anda di bidang pertanian!</p>
+                    <p class="lead">Perkenalkan salah satu inovasi terbaru dari kami, yaitu GROVE, alat gerak pada lahan
+                        pertanian kering
+                        dunia pertanian modern. Dirancang untuk buntuk mempermudah pekerjaan di lahan pertanian kering.
+                        Dengan desain modern dan teknologi canggih, GROVE mampu menampung beban hingga 100 kg dan berputar
+                        360 derajat untuk manuver maksimal. Dikendalikan dengan remote kontrol, alat ini dirancang untuk
+                        menghemat tenaga dan waktu Anda, menjadikan aktivitas bertani lebih efisien dan praktis. Jadikan
+                        GROVE solusi andalan Anda di bidang pertanian!</p>
                 </div>
             </div>
         </div>
@@ -55,9 +60,9 @@
             <h2 class="text-capitalize m-0 py-lg-5">Spesifikasi dari GROVE</h2>
 
             <div class="video-box mb-5">
-                <a href="/specification"><video class="video-content" src="{{ asset('assets/jpg/blast-2-unscreen.gif') }}"
-                    poster="{{ asset('assets/jpg/blast-2-unscreen.gif') }}" playsinline muted autoplay="false"
-                    loop="false" style="width: 100%; max-width: 800px; z-index: 0;"></video></a>
+                <a href="/specification"><video class="video-content" src="{{ asset('assets/jpg/grove_gif.gif') }}"
+                        poster="{{ asset('assets/jpg/grove_gif.gif') }}" playsinline muted autoplay="false"
+                        loop="false" style="width: 100%; max-width: 800px; z-index: 0;"></video></a>
             </div>
     </section>
 
@@ -73,14 +78,18 @@
                     <img src="{{ asset('tmplt/images/search.png') }}" class="bd-placeholder-img rounded-circle"
                         alt="Bootstrap Themes" width="140" height="140" loading="lazy">
                     <h4 class="fw-normal mt-5 ">Presisi dan Akurat</h4>
-                    <p>Teknologi canggih GROVE memastikan setiap pekerjaan dilakukan dengan presisi dan akurasi tinggi, membantu Anda mengelola lahan secara efisien. Setiap fitur dirancang untuk memberikan hasil terbaik, menjadikan alat ini solusi sempurna bagi petani modern.</p>
+                    <p>Teknologi canggih GROVE memastikan setiap pekerjaan dilakukan dengan presisi dan akurasi tinggi,
+                        membantu Anda mengelola lahan secara efisien. Setiap fitur dirancang untuk memberikan hasil terbaik,
+                        menjadikan alat ini solusi sempurna bagi petani modern.</p>
                 </div>
 
                 <div class="text-center col-lg-4">
                     <img src="{{ asset('tmplt/images/price.png') }}" class="bd-placeholder-img rounded-circle"
                         alt="Bootstrap Themes" width="140" height="140" loading="lazy">
                     <h4 class="fw-normal mt-5">Hemat Biaya</h4>
-                    <p>GROVE menawarkan solusi inovatif dengan harga yang kompetitif, memberikan nilai maksimal untuk setiap investasi Anda. Dengan kualitas terbaik dan fitur unggulan, GROVE tidak hanya menghemat tenaga, tetapi juga memberikan keuntungan lebih besar dalam jangka panjang.
+                    <p>GROVE menawarkan solusi inovatif dengan harga yang kompetitif, memberikan nilai maksimal untuk setiap
+                        investasi Anda. Dengan kualitas terbaik dan fitur unggulan, GROVE tidak hanya menghemat tenaga,
+                        tetapi juga memberikan keuntungan lebih besar dalam jangka panjang.
                     </p>
                 </div>
 
@@ -88,7 +97,9 @@
                     <img src="{{ asset('tmplt/images/time.png') }}" class="bd-placeholder-img rounded-circle"
                         alt="Bootstrap Themes" width="140" height="140" loading="lazy">
                     <h4 class="fw-normal mt-5 ">Efisien dan Hemat Waktu</h4>
-                    <p>Didesain untuk menghemat waktu, GROVE bekerja cepat dan efisien, meningkatkan produktivitas Anda di lahan pertanian. Dengan kemampuan manuver 360 derajat dan kendali jarak jauh, pekerjaan menjadi lebih mudah, cepat, dan nyaman. </p>
+                    <p>Didesain untuk menghemat waktu, GROVE bekerja cepat dan efisien, meningkatkan produktivitas Anda di
+                        lahan pertanian. Dengan kemampuan manuver 360 derajat dan kendali jarak jauh, pekerjaan menjadi
+                        lebih mudah, cepat, dan nyaman. </p>
                 </div>
             </div>
         </div>
@@ -166,18 +177,46 @@
                 <div class="col-12 col-md-5 d-flex flex-column justify-content-center mb-4 mb-md-0">
                     <h1 class="text-capitalize lh-1 mb-3">Come collaborate with us</h1>
                 </div>
-                
+
                 <!-- Kolom teks kanan -->
                 <div class="col-12 col-md-7">
                     <div class="text-content ps-md-5 mt-4 mt-md-0">
-                        <p class="py-lg-2">Kami percaya bahwa kolaborasi adalah kunci untuk meraih hasil terbaik dan menciptakan perubahan yang berarti. Dengan keahlian, ide, dan semangat Anda, kita bisa membuka peluang baru, menghasilkan inovasi, dan mewujudkan proyek yang lebih besar. Bersama-sama, kita tidak hanya bekerja, tetapi juga tumbuh dan belajar.</p>
-                        <a href="/apply" class="btn btn-primary btn-lg px-4 me-md-2">Join With Us</a>
+                        <p class="py-lg-2">Kami percaya bahwa kolaborasi adalah kunci untuk meraih hasil terbaik dan
+                            menciptakan perubahan yang berarti. Dengan keahlian, ide, dan semangat Anda, kita bisa membuka
+                            peluang baru, menghasilkan inovasi, dan mewujudkan proyek yang lebih besar. Bersama-sama, kita
+                            tidak hanya bekerja, tetapi juga tumbuh dan belajar.</p>
+                        @auth
+                            <a href="/apply" class="btn btn-primary btn-lg px-4 me-md-2">Join With Us</a>
+                        @else
+                            <a href="javascript:void(0);" class="btn btn-primary btn-lg px-4 me-md-2" data-bs-toggle="modal"
+                                data-bs-target="#loginModals">Join With Us</a>
+                        @endauth
+                    </div>
+                    <!-- Modal Harap Login -->
+                    <div class="modal fade" id="loginModals" tabindex="-1" aria-labelledby="loginModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content text-bg-dark">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="loginModalLabel">Harap Login Terlebih Dahulu</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Anda harus login terlebih dahulu untuk mengakses fitur ini.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Tutup</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
 
     @if (Session::has('success'))
         <script>
@@ -188,4 +227,19 @@
             });
         </script>
     @endif
+
+    <script>
+        function checkLogin() {
+            // Simulasi login status; ubah sesuai kebutuhan
+            const isLoggedIn = false; // Ubah menjadi true jika pengguna sudah login
+    
+            if (!isLoggedIn) {
+                const loginModals = new bootstrap.Modal(document.getElementById('loginModals'));
+                loginModals.show();
+            } else {
+                // Arahkan ke halaman Apply Now jika sudah login
+                window.location.href = "/apply";
+            }
+        }
+    </script>
 @endSection

@@ -106,3 +106,10 @@ Route::get('gambar/{filename}', function ($filename) {
     abort(404);
 });
 
+
+Route::get('/login', function () {
+    return view('loginn'); 
+});
+Route::get('/register', function () {
+    return view('registerr'); 
+});

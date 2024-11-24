@@ -46,7 +46,8 @@
                                     @auth
                                         <a href="{{ route('apply') }}" class="dropdown-item">Apply Now</a>
                                     @else
-                                        <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModals">Apply Now</a>
+                                        <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#loginModals">Apply Now</a>
                                     @endauth
                                 </li>
                                 <li><a href="/disNetwork" class="dropdown-item">Distributor Network</a></li>
@@ -54,7 +55,7 @@
                         </li>
                         <!-- Modal Harap Login -->
                         <div class="modal fade" id="loginModals" tabindex="-1" aria-labelledby="loginModalLabel"
-                            aria-hidden="true" >
+                            aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content text-bg-dark">
                                     <div class="modal-header">
@@ -105,8 +106,8 @@
         </div>
 
         <!-- Login Modal -->
-        <div class="modal fade" id="showLoginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true"
-            data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal fade" id="showLoginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+            aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -122,6 +123,9 @@
                             @if ($errors->any())
                                 <div class="alert alert-danger">
                                     <ul>
+                                        @if (session('form_type') == 'login')
+                                            <strong>Error pada Login:</strong>
+                                        @endif
                                         @foreach ($errors->all() as $item)
                                             <li>{{ $item }}</li>
                                         @endforeach
@@ -142,9 +146,6 @@
                                         class="form-label fs-6 text-uppercase fw-bold text-black">Password</label>
                                     <input type="password" id="loginPassword" name="password" placeholder="Password"
                                         class="form-control ps-3">
-                                    <div id="passwordHelpBlock" class="form-text text-center">
-                                        <a href="#" class="password">Forgot Password?</a>
-                                    </div>
                                 </div>
                                 <div class="d-grid my-3">
                                     <button class="btn btn-primary btn-lg btn-dark text-uppercase fs-6">Log In</button>
@@ -171,14 +172,17 @@
                                 <img class="mb-4 rounded-circle" src="{{ asset('assets/jpg/logo.png') }}"
                                     alt="Logo" style="max-width: 114px;">
                             </div>
-                            @if (Session::has('pesan'))
-                                <script>
-                                    Swal.fire({
-                                        title: 'Registration Successful!',
-                                        text: '{{ Session::get('pesan') }}',
-                                        icon: 'success'
-                                    });
-                                </script>
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @if (session('form_type') == 'register')
+                                            <strong>Error pada Register:</strong>
+                                        @endif
+                                        @foreach ($errors->all() as $item)
+                                            <li>{{ $item }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
                             @endif
                             <form id="registerForm" class="form-group flex-wrap p-3"
                                 action="{{ route('register.submit') }}" method="POST">
@@ -235,4 +239,3 @@
         }
     }
 </script>
-

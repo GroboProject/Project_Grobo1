@@ -411,6 +411,33 @@ button.btn.btn-primary.btn-lg.about-search {
 }
 /* about background end */
 
+/* spec start */
+
+.spec-background {
+    background-size: cover; /* Memastikan background menutupi area */
+    background-position: center; /* Pusatkan background */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+}
+
+.spec-background h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.spec-background p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+ul.list-unstyled li {
+    font-size: 1rem;
+}
+
+/* spec end */
+
 /*---- community section start ----  */
 .row.community-row {
     display: flex;

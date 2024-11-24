@@ -19,9 +19,9 @@
                     @foreach ($requests as $index => $request)
                         <div class="col-md-8 mb-4">
                             <div class="card">
-                                <div class="card-header bg-transparent border-success">#{{ $index + 1 }}</div>
+                                <div class="card-header bg-transparent border-success">{{ $request->company_name }}</div>
                                 <div class="card-body text-success">
-                                    <h5 class="card-title">{{ $request->company_name }}</h5>
+                                    <h5 class="card-title"></h5>
                                     <p class="card-text">
                                         <strong>Bidang:</strong> {{ $request->business_type }} <br>
                                         <strong>Website:</strong> 
