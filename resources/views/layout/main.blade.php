@@ -7,7 +7,7 @@
         <title>@yield('title', 'Default Title') </title>
 
         <!-- Favicon -->
-        <link href="{{ asset('assets/jpg/logo.png')}}" rel="icon" type="image/png">
+        <link rel="icon" type="image/png" href="{{ asset('assets/jpg/logo.png') }}">
 
 
         <link rel="stylesheet" type="text/css" href="{{ asset('tmplt/css/vendor.css') }}">
