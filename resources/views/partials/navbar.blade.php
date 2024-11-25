@@ -4,7 +4,6 @@
             <a class="navbar-brand" href="/">
                 <img src="{{ asset('assets/jpg/logo.png') }}" alt="Logo" class="logo-img">
             </a>
-
             <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2"
                 aria-label="Toggle navigation"><ion-icon name="menu-outline"
@@ -92,134 +91,13 @@
                             <!-- Jika pengguna belum login -->
                         @else
                             <li class="nav-item">
-                                <a class="nav-link mx-md-4" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#showLoginModal">Login</a>
+                                <a class="nav-link" href="{{ route('login') }}">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-md-4" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#registerModal">Sign Up</a>
+                                <a class="nav-link" href="{{ route('register') }}">Sign Up</a>
                             </li>
                         @endauth
                     </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Login Modal -->
-        <div class="modal fade" id="showLoginModal" tabindex="-1" aria-labelledby="loginModalLabel"
-            aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="tabs-listing mt-4">
-                            <div class="d-flex justify-content-center">
-                                <img class="mb-4 rounded-circle" src="{{ asset('assets/jpg/logo.png') }}"
-                                    alt="Logo" style="max-width: 114px;">
-                            </div>
-                            @if ($errors->any())
-                                <div class="alert alert-danger">
-                                    <ul>
-                                        @if (session('form_type') == 'login')
-                                            <strong>Error pada Login:</strong>
-                                        @endif
-                                        @foreach ($errors->all() as $item)
-                                            <li>{{ $item }}</li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                            @endif
-                            <form id="loginForm" class="form-group flex-wrap p-3"
-                                action="{{ route('login.submit') }}" method="POST">
-                                @csrf
-                                <div class="form-input col-lg-12 my-4">
-                                    <label for="loginEmail"
-                                        class="form-label fs-6 text-uppercase fw-bold text-black">Email Address</label>
-                                    <input type="text" id="loginEmail" value="{{ old('email') }}"
-                                        name="email" placeholder="Email" class="form-control ps-3">
-                                </div>
-                                <div class="form-input col-lg-12 my-4">
-                                    <label for="loginPassword"
-                                        class="form-label fs-6 text-uppercase fw-bold text-black">Password</label>
-                                    <input type="password" id="loginPassword" name="password" placeholder="Password"
-                                        class="form-control ps-3">
-                                </div>
-                                <div class="d-grid my-3">
-                                    <button class="btn btn-primary btn-lg btn-dark text-uppercase fs-6">Log In</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Register Modal -->
-        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="tabs-listing mt-4">
-                            <div class="d-flex justify-content-center">
-                                <img class="mb-4 rounded-circle" src="{{ asset('assets/jpg/logo.png') }}"
-                                    alt="Logo" style="max-width: 114px;">
-                            </div>
-                            @if ($errors->any())
-                                <div class="alert alert-danger">
-                                    <ul>
-                                        @if (session('form_type') == 'register')
-                                            <strong>Error pada Register:</strong>
-                                        @endif
-                                        @foreach ($errors->all() as $item)
-                                            <li>{{ $item }}</li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                            @endif
-                            <form id="registerForm" class="form-group flex-wrap p-3"
-                                action="{{ route('register.submit') }}" method="POST">
-                                @csrf
-                                <div class="form-input col-lg-12 my-4">
-                                    <label for="registerName"
-                                        class="form-label fs-6 text-uppercase fw-bold text-black">Name</label>
-                                    <input type="text" id="registerName" value="{{ old('name') }}"
-                                        name="name" placeholder="Name" class="form-control ps-3">
-                                </div>
-                                <div class="form-input col-lg-12 my-4">
-                                    <label for="registerEmail"
-                                        class="form-label fs-6 text-uppercase fw-bold text-black">Email
-                                        Address</label>
-                                    <input type="text" id="registerEmail" value="{{ old('email') }}"
-                                        name="email" placeholder="Email" class="form-control ps-3">
-                                </div>
-                                <div class="form-input col-lg-12 my-4">
-                                    <label for="registerPassword"
-                                        class="form-label fs-6 text-uppercase fw-bold text-black">Password</label>
-                                    <input type="password" id="registerPassword" name="password"
-                                        placeholder="Password" class="form-control ps-3">
-                                </div>
-                                <div class="form-input col-lg-12 my-4">
-                                    <label for="registerPasswordConfirm"
-                                        class="form-label fs-6 text-uppercase fw-bold text-black">Confirm
-                                        Password</label>
-                                    <input type="password" id="registerPasswordConfirm" name="password_confirmation"
-                                        placeholder="Confirm Password" class="form-control ps-3">
-                                </div>
-                                <div class="d-grid my-3">
-                                    <button
-                                        class="btn btn-primary btn-lg btn-dark text-uppercase fs-6">Register</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -46,35 +46,35 @@
 </head>
 
 <body>
-    <div class="login-container ">
+    <div class="login-container">
         <img src="{{ asset('assets/jpg/logo.png') }}" class="rounded-circle mx-auto d-block" alt="Logo">
-
-        <form action="login_process.php" method="POST">
-            <div class="mb-3">
-                <label for="email" class="form-label text-start">Name</label>
-                <input ype="text" id="register" name="name" placeholder="Enter your Name"
-                    class="form-control ps-3" required>
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    <strong>Error pada Login:</strong>
+                    @foreach ($errors->all() as $item)
+                        <li>{{ $item }}</li>
+                    @endforeach
+                </ul>
             </div>
+        @endif
+        <form id="loginForm" class="form-group flex-wrap p-3" action="{{ route('login.submit') }}" method="POST">
+            @csrf
             <div class="mb-3">
-                <label for="email" class="form-label text-start">Email Address</label>
+                <label for="email" class="form-label">Email Address</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
                     required>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password"
-                    placeholder="Enter your password" required>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password"
+                    required>
             </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="password" name="password"
-                    placeholder="Enter your password" required>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
         </form>
 
         <div class="mt-3 text-center">
-            <p>Sudah punya akun? <a href="/login">Masuk</a></p>
+            <p>Belum punya akun? <a href="/register">Daftar</a></p>
         </div>
     </div>
 

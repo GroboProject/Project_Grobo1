@@ -7,7 +7,7 @@
         <title>Grobo - Robotics Gadget for Automatic Cultivation </title>
 
         <!-- Favicon -->
-        <link href="{{ asset('tmplt2/img/favicon.ico') }}" rel="icon">
+        <link rel="icon" type="image/png" href="{{ asset('assets/jpg/logo.png') }}">
 
 
         <link rel="stylesheet" type="text/css" href="{{ asset('tmplt/css/vendor.css') }}">
