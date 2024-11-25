@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'GROBO | Berita')
+
 @section('content')
     <div class="container" style="margin-top: 100px; margin-bottom: 50px">
         <h2>Berita Terbaru</h2>

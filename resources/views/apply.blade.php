@@ -1,4 +1,5 @@
 @extends('layout.main')
+@section('title', 'GROBO | Pendaftaran Perusahaan') 
 
 @section('content')
     <section id="about" class="about-background" style="background-image: url('{{ asset('assets/jpg/about.jpg') }}');">

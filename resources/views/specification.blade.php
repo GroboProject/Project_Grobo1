@@ -1,60 +1,153 @@
 @extends('layout.main')
 
+@section('title', 'GROBO | Spesifikasi GROVE')
+
 @section('content')
-    <section id="specification" class="spec-background" style="background-image: url('{{ asset('assets/jpg/grove.PNG') }}');">
-        <div class="container text-center text-white d-flex flex-column justify-content-center align-items-center"
-            style="min-height: 100vh;">
-            <h1 class="fw-bold mb-3">GROVE (Ground Remote Operations Vehicle for Efficiency)</h1>
-            <p class="lead">Robot pertanian lahan kering yang memudahkan pekerjaan dengan efisiensi tinggi.</p>
-            <div class="row mt-5 justify-content-center">
-                <div class="col-lg-10">
-                    <p class="mb-4">
-                        GROVE adalah platform robot pertanian yang dirancang untuk mempermudah pekerjaan di lahan kering.
-                        Dengan berbagai fitur canggih seperti sistem penghindaran rintangan, penyiraman otomatis, dan
-                        pengumpulan data lingkungan, alat ini menjadi solusi masa depan untuk efisiensi pertanian.
-                    </p>
-                    <ul class="list-unstyled text-start mx-auto" style="max-width: 800px;">
-                        <li class="mb-2"><strong>Dimensi:</strong> 120 cm x 80 cm x 60 cm (P x L x T).</li>
-                        <li class="mb-2"><strong>Sumber Daya:</strong> Baterai Lithium-Ion 24V, tahan hingga 8 jam
-                            operasi.</li>
-                        <li class="mb-2"><strong>Sensor:</strong> Ultrasonik untuk deteksi rintangan, sensor kelembapan
-                            untuk tanah.</li>
-                        <li class="mb-2"><strong>Kapasitas:</strong> Mampu membawa beban hingga 50 kg.</li>
-                        <li class="mb-2"><strong>Sistem Kendali:</strong> Remote control dan mode otomatis dengan GPS.
-                        </li>
-                    </ul>
+    <section id="grove" class="text-center" style="  padding: 110px 0;">
+        <div class="container">
+            <h1 style="font-size: 60px; font-weight: bold; font-family: 'Playfair Display', serif;">GROVE</h1>
+            <h4 style="font-size: 30px; font-weight: bold; font-family: 'Poppins', sans-serif;">(Robot Pertanian Lahan
+                Kering)</h4>
+            <img src="{{ asset('assets/jpg/grove.PNG') }}" alt="Grove Robot" style="width: 70vh; margin: 1px 0;">
+            <h3 style="font-size: 24px;  font-family: 'Roboto', sans-serif;">Solusi Alat Gerak Pada Pertanian Lahan Kering
+            </h3>
+            <hr style="width: 50%; margin: 20px auto; border: 1px solid white;">
+        </div>
+    </section>
+
+    <section id="grove-desc" class="text-center py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-4" style="padding: 100px;">
+                <div class="col-11">
+                    <h2 class="fw-bold" style="font-family: 'Poppins', sans-serif;">
+                        Kendaraan Tak Berawak dengan Remote Kontrol, Satu Sistem untuk Banyak Pekerjaan
+                    </h2>
+                </div>
+            </div>
+            {{-- /* Tambahkan border di sini agar melengkung */ --}}
+            <div id="features" class="row justify-content-center" style="margin-top: -50px;">
+                <div class="col-md-3 col-sm-6 mb-4 mt-5">
+                    <div class="feature-item">
+                        <i class="bi bi-grid-3x3-gap icon-style"></i>
+                        <h5 class="fw-bold fs-5 mt-4">Modular</h5>
+                        <p class="text-muted">Muatan opsional untuk berbagai sistem</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 mt-5">
+                    <div class="feature-item">
+                        <i class="bi bi-controller"></i>
+                        <h5 class="fw-bold fs-5 mt-4">Mudah Digunakan</h5>
+                        <p class="text-muted">Kontrol Menggunakan Remote Kontrol</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 mt-5">
+                    <div class="feature-item">
+                        <i class="bi bi-gear"></i>
+                        <h5 class="fw-bold fs-5 mt-4">Torsi Besar</h5>
+                        <p class="text-muted">Kuat untuk berbagai medan</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-    {{-- <!-- Div Kedua -->
-    <div class="bg-dark text-white py-5" style="background-color: #1A242F;">
-        <div class="container text-center">
-            <h3 class="mb-3">Robot Pertanian Lahan Kering</h3>
-            <p>Memudahkan pekerjaan pertanian pada lahan kering dengan efisiensi tinggi.</p>
+    <section id="grove-spec" class="text-center py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-4" style="padding: 100px;">
+                <div class="col-11 mb-5">
+                    <h2 class="fw-bold" style="font-family: 'Poppins', sans-serif;">Spesifikasi GROVE</h2>
+                </div>
+                <div class="video-box mb-5 mt-4">
+                    <video class="video-content" src="{{ asset('assets/jpg/grove_gif.gif') }}"
+                        poster="{{ asset('assets/jpg/grove_gif.gif') }}" playsinline muted autoplay="false" loop="false"
+                        style="width: 110%; max-width: 100vh; height: 100%;"></video>
+                </div>
+            </div>
+            <div id="grove-spec" class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-6">
+                    <div class="card bg-dark border-0 h-100">
+                        <img src="{{ asset('assets/jpg/material.png') }}" alt="High-strength integration steel frame" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Kerangka yang terintegrasi dengan kekuatan tinggi</h5>
+                            <p class="card-text">Dirancang untuk meningkatkan kekuatan dan daya tahan struktur tubuh kendaraan.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-lg-6">
+                    <div class="card bg-dark border-0 h-100">
+                        <img src="{{ asset('assets/jpg/Ukuran.png') }}" alt="Customise for agricultural scenarios" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Didesain untuk kebutuhan pertanian</h5>
+                            <p class="card-text">Memaksimalkan produktivitas di lahan kering dengan efisiensi penggunaan energi dan daya tahan tinggi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="grove-spec" class="row g-4 mt-4 mb-4 justify-content-center">
+                <!-- Card 3 -->
+                <div class="col-lg-6">
+                    <div class="card bg-dark border-0 h-100">
+                        <img src="{{ asset('assets/jpg/rangka.png') }}" alt="Highly modular design" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Desain yang sangat modular</h5>
+                            <p class="card-text"> mudah untuk diperbaiki, memastikan efisiensi dalam penggantian komponen dan penghematan waktu saat perawatan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <!-- Div Ketiga -->
-    <div class="container my-5" style="background-image: {{ asset('assets/jpg/grove.PNG') }}">
-        <h3 class="text-center mb-4">Spesifikasi Alat Kami</h3>
-        <ul class="list-unstyled">
-            <li class="mb-2"><strong>Dimensi:</strong> 120 cm x 80 cm x 60 cm (P x L x T).</li>
-            <li class="mb-2"><strong>Sumber Daya:</strong> Baterai Lithium-Ion 24V, tahan hingga 8 jam operasi.</li>
-            <li class="mb-2"><strong>Sensor:</strong> Ultrasonik untuk deteksi rintangan, sensor kelembapan untuk tanah.
-            </li>
-            <li class="mb-2"><strong>Kapasitas:</strong> Mampu membawa beban hingga 50 kg.</li>
-            <li class="mb-2"><strong>Sistem Kendali:</strong> Remote control dan mode otomatis dengan GPS.</li>
-            <li class="mb-2"><strong>Fitur Utama:</strong>
-                <ul>
-                    <li>Penyiraman otomatis berdasarkan kelembapan tanah.</li>
-                    <li>Penghindaran rintangan cerdas.</li>
-                    <li>Pengumpulan data lingkungan (kelembapan dan suhu).</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-@endsection --}}
+    </section>
+    <section id="core-values" class="py-5">
+        <div class="container">
+            <hr class="mx-auto my-3">
+            <div class="row text-center">
+                <!-- Kolom 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="value-item">
+                        <i class="bi bi-gear fs-2 text-success"></i>
+                        <h5 class="fw-bold mt-2">Torsi</h5>
+                        <p class="text-muted">Berkekuatan 30 Newton-meter</p>
+                    </div>
+                </div>
+                <!-- Kolom 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="value-item">
+                        <i class="bi bi-box-seam fs-2 text-success"></i>
+                        <h5 class="fw-bold mt-2">Beban</h5>
+                        <p class="text-muted">Dapat menampung beban hingga 100kg</p>
+                    </div>
+                </div>
+                <!-- Kolom 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="value-item">
+                        <i class="bi bi-battery-charging fs-2 text-success"></i>
+                        <h5 class="fw-bold mt-2">Baterai</h5>
+                        <p class="text-muted">Berkapasitas 50.000 mAh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <!-- Kolom 4 -->
+                <div class="col-md-4 offset-md-2 mb-4">
+                    <div class="value-item">
+                        <i class="bi bi-arrow-clockwise fs-2 text-success"></i>
+                        <h5 class="fw-bold mt-2">Akselerasi</h5>
+                        <p class="text-muted">Dapat berputar 360 derajat</p>
+                    </div>
+                </div>
+                <!-- Kolom 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="value-item">
+                        <i class="bi bi-lightning-charge fs-2 text-success"></i>
+                        <h5 class="fw-bold mt-2">Kecepatan</h5>
+                        <p class="text-muted">Kecepatan maksimal 10 km/jam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+@endsection

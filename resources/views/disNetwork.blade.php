@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'GROBO | Distirbusi Network')
+
 @section('content')
     <section id="globe" class="about-background py-1">
         <div class="container text-center text-white">

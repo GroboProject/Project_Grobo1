@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>GROBO | Login</title>
+    <link href="{{ asset('assets/jpg/logo.png')}}" rel="icon" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             display: flex;
@@ -42,6 +44,21 @@
         .btn-primary:hover {
             background-color: #0c0d0d;
         }
+
+        .btn-back {
+            background-color: #ddd;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .btn-back i {
+            margin-right: 8px;
+        }
     </style>
 </head>
 
@@ -66,6 +83,10 @@
         <div class="mt-3 text-center">
             <p>Belum punya akun? <a href="/register">Daftar</a></p>
         </div>
+
+        <a href="/" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

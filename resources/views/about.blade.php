@@ -1,11 +1,13 @@
 @extends('layout.main')
 
+@section('title', 'GROBO | Tentang Kami')
+
 @section('content')
     <!-- billboard start  -->
     <section id="about" class="about-background" style="background-image: url('{{ asset('assets/jpg/about.jpg') }}');">
         <div class="container text-center text-white">
-            <h1>Judul atau Konten di Atas Background</h1>
-            <p>Deskripsi atau informasi lainnya yang muncul di atas background.</p>
+            <h1 style="font-style: 'Playfair Display', 'serif'; ">Mengoptimalkan Hasil Pertanian dengan Sistem Otomatisasi</h1>
+            <p style="font-size: 20px; font-family: 'Poppins', sans-serif;">GROBO mengintegrasikan teknologi canggih untuk membantu petani meningkatkan efisiensi dan hasil pertanian dengan sistem yang mudah digunakan dan dapat diandalkan.</p>
         </div>
     </section>
 

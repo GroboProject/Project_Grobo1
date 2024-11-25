@@ -1,4 +1,5 @@
 @extends('layout.main')
+@section('title', 'GROBO | Komunitas')
 
 @section('content')
 <section id="community">

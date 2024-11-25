@@ -92,12 +92,10 @@
                             <!-- Jika pengguna belum login -->
                         @else
                             <li class="nav-item">
-                                <a class="nav-link mx-md-4" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#showLoginModal">Login</a>
+                                <a class="nav-link mx-md-4" href=/login >Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-md-4" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#registerModal">Sign Up</a>
+                                <a class="nav-link mx-md-4" href="/register">Sign Up</a>
                             </li>
                         @endauth
                     </ul>

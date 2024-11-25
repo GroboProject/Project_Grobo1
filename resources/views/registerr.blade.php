@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             display: flex;
@@ -42,6 +43,21 @@
         .btn-primary:hover {
             background-color: #0c0d0d;
         }
+
+        .btn-back {
+            background-color: #ddd;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .btn-back i {
+            margin-right: 8px;
+        }
     </style>
 </head>
 
@@ -52,23 +68,19 @@
         <form action="login_process.php" method="POST">
             <div class="mb-3">
                 <label for="email" class="form-label text-start">Name</label>
-                <input ype="text" id="register" name="name" placeholder="Enter your Name"
-                    class="form-control ps-3" required>
+                <input ype="text" id="register" name="name" placeholder="Enter your Name" class="form-control ps-3" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label text-start">Email Address</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
-                    required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password"
-                    placeholder="Enter your password" required>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="password" name="password"
-                    placeholder="Enter your password" required>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
             </div>
             <button type="submit" class="btn btn-primary w-100">Sign Up</button>
         </form>
@@ -76,6 +88,11 @@
         <div class="mt-3 text-center">
             <p>Sudah punya akun? <a href="/login">Masuk</a></p>
         </div>
+
+        <!-- Back Button -->
+        <a href="/" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

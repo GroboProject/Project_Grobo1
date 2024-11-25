@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'GROBO | Isi Berita')
+
 @section('content')
     <section id="community">
         <div class="container mt-5">

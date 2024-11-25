@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'GROBO | Dashboard')
+
 @section('content')
     <!-- billboard start  -->
     <section id="billboard">
@@ -62,7 +64,7 @@
             <div class="video-box mb-5">
                 <a href="/specification"><video class="video-content" src="{{ asset('assets/jpg/grove_gif.gif') }}"
                         poster="{{ asset('assets/jpg/grove_gif.gif') }}" playsinline muted autoplay="false"
-                        loop="false" style="width: 100%; max-width: 800px; z-index: 0;"></video></a>
+                        loop="false" style="width: 110%; max-width: 100vh; height: 100%;"></video></a>
             </div>
     </section>
 

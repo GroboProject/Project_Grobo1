@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'GROBO | Kontak Kami')
+
 @section('content')
     <section id="community">
         <div class="container my-5 py-5 text-center">

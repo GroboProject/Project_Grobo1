@@ -4,10 +4,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Grobo - Robotics Gadget for Automatic Cultivation </title>
+        <title>@yield('title', 'Default Title') </title>
 
         <!-- Favicon -->
-        <link href="{{ asset('tmplt2/img/favicon.ico') }}" rel="icon">
+        <link href="{{ asset('assets/jpg/logo.png')}}" rel="icon" type="image/png">
 
 
         <link rel="stylesheet" type="text/css" href="{{ asset('tmplt/css/vendor.css') }}">
