@@ -68,8 +68,10 @@ Route::get('/specification', function () {
 
 Route::middleware(['auth', 'userAkses:admin'])->group(function () {
 
+    //route base
+    Route::get('/admin/base', [AdminController::class, 'admin'])->name('admin.base');
+
     // route curd berita
-    Route::get('/admin/base', [AdminController::class, 'admin'])->name('base');
     Route::get('/admin/tabelBerita', [AdminController::class, 'newsTable'])->name('admin.newsTable');
     Route::get('/admin/tambahBerita', [AdminController::class, 'addNews'])->name('admin.addNews');
     Route::post('/admin/storeNews', [AdminController::class, 'storeNews'])->name('admin.storeNews');
