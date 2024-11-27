@@ -221,7 +221,7 @@
                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item p-4">
                                 <div class="overflow-hidden mb-4">
-                                    <img class="img-fluid" src="{{ asset('assets/jpg/ega.jpg') }}" alt="">
+                                    <img class="img-fluid" src="{{ asset('assets/jpg/nopal.jpg') }}" alt="">
                                 </div>
                                 <h5 class="mb-0">Mohamad Nouval Amrullah </h5>
                                 <p>J0404221133</p>
