@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Feedback;
 use App\Models\News;
 use App\Models\Request as RequestModel;
 use Illuminate\Http\Request;
@@ -11,16 +12,19 @@ class AdminController extends Controller
     public function admin(Request $request) {
         // Hitung total data
         $totalNews = News::count(); // Hitung semua data di tabel news
-        $totalRequest = RequestModel::count(); // Hitung semua data di tabel request
+        $totalRequest = RequestModel::where('status', 'pending')->count(); // Hitung semua data di tabel request
         $totalApprovedCompanies = RequestModel::where('status', 'approved')->count(); // Hitung request dengan status 'approved'
+        $totalFeedbacks = Feedback::count(); // Hitung semua data di tabel feedback
     
         // Kirimkan data ke view
         return view('admin.base', [
             'totalNews' => $totalNews,
             'totalRequests' => $totalRequest,
             'totalApprovedCompanies' => $totalApprovedCompanies,
+            'totalFeedbacks' => $totalFeedbacks, // Tambahkan total feedback
         ]);
     }
+    
 
     // Menampilkan daftar berita
     public function newsTable()

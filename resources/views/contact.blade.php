@@ -47,32 +47,52 @@
         </div>
     </section>
     <!-- Feedback Section -->
-    <section id="feedback">
-        <div class="container my-5 py-5 text-center" style="background-color: #1A242F;">
-            <h3 class="text-capitalize text-white">Berikan Umpan Balik Anda</h3>
-            <p class="text-light mb-4">Kami ingin mendengar pendapat dan masukan Anda!</p>
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-10">
-                    <form action="#" method="POST">
-                        <div class="mb-3">
-                            <label for="name" class="form-label text-white">Nama</label>
-                            <input type="text" class="form-control" id="name" name="name"
-                                placeholder="Masukkan nama Anda" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label text-white">Email</label>
-                            <input type="email" class="form-control" id="email" name="email"
-                                placeholder="Masukkan email Anda" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="feedback" class="form-label text-white">Pesan atau Masukan</label>
-                            <textarea class="form-control" id="feedback" name="feedback" rows="5" placeholder="Tuliskan pesan Anda" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Kirim</button>
-                    </form>
-                </div>
-            </div>
+    @if (session('success1'))
+        <div class="alert1">
+            {{ session('success1') }}
         </div>
-    </section>
+    @endif
+    <form action="{{ route('feedback.store') }}" method="POST" class="feedback-form">
+        @csrf
+        <div class="mb-3">
+            <label for="name" class="form-label text-white">Nama</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan nama Anda"
+                required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label text-white">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan email Anda"
+                required>
+        </div>
+        <div class="mb-3">
+            <label for="feedback" class="form-label text-white">Pesan atau Masukan</label>
+            <textarea class="form-control" id="feedback" name="feedback" rows="5" placeholder="Tuliskan pesan Anda" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim</button>
+    </form>
+
+    <style>
+        .feedback-form {
+            max-width: 600px; /* Batasi lebar form */
+            margin: 50px auto; /* Posisi form di tengah */
+            padding: 20px; /* Tambahkan padding agar terlihat rapi */             
+            background-color: #20232a; /* Warna latar belakang */           
+            border-radius: 10px; /* Sudut melengkung */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+        }
+
+        .alert1 {
+            width: 100%; /* Lebar penuh container */
+            text-align: center; /* Pusatkan teks */
+            background-color: #d4edda; /* Warna hijau terang (sesuai Bootstrap success) */
+            color: #155724; /* Warna teks hijau gelap */
+            padding: 15px; /* Ruang dalam */
+            border: 1px solid #c3e6cb; /* Border hijau */
+            border-radius: 5px; /* Sudut melengkung */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+            margin-top: 40px; /* Tambahkan jarak ke bawah */
+            margin-bottom: 20px; /* Opsional: Tambahkan jarak ke elemen di bawahnya */
+        }
+    </style>
 
 @endSection
