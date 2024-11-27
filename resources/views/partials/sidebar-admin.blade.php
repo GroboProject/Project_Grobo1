@@ -35,8 +35,8 @@
 
             <!-- Other Links -->
             <li>
-                <a href="#" class="sidebar-link">
-                    <span>Update 4</span>
+                <a href="/admin/feedback" class="sidebar-link">
+                    <span>Feedback</span>
                 </a>
             </li>
             <li>

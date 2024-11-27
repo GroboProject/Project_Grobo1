@@ -107,3 +107,10 @@ Route::get('gambar/{filename}', function ($filename) {
 
     abort(404);
 });
+
+Route::get('/admin/feedback', function () {
+    return view('/admin/feedback'); 
+});
+Route::get('/admin/detailFeedback', function () {
+    return view('/admin/detailFeedback'); 
+});
