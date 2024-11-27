@@ -46,4 +46,33 @@
             </div>
         </div>
     </section>
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <div class="container my-5 py-5 text-center" style="background-color: #1A242F;">
+            <h3 class="text-capitalize text-white">Berikan Umpan Balik Anda</h3>
+            <p class="text-light mb-4">Kami ingin mendengar pendapat dan masukan Anda!</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-white">Nama</label>
+                            <input type="text" class="form-control" id="name" name="name"
+                                placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-white">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Masukkan email Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="feedback" class="form-label text-white">Pesan atau Masukan</label>
+                            <textarea class="form-control" id="feedback" name="feedback" rows="5" placeholder="Tuliskan pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endSection
