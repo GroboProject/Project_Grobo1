@@ -6,8 +6,11 @@
     <!-- billboard start  -->
     <section id="about" class="about-background" style="background-image: url('{{ asset('assets/jpg/about.jpg') }}');">
         <div class="container text-center text-white">
-            <h1 style="font-style: 'Playfair Display', 'serif'; ">Mengoptimalkan Hasil Pertanian dengan Sistem Otomatisasi</h1>
-            <p style="font-size: 20px; font-family: 'Poppins', sans-serif;">GROBO mengintegrasikan teknologi canggih untuk membantu petani meningkatkan efisiensi dan hasil pertanian dengan sistem yang mudah digunakan dan dapat diandalkan.</p>
+            <h1 style="font-style: 'Playfair Display', 'serif'; ">Mengoptimalkan Hasil Pertanian dengan Sistem Otomatisasi
+            </h1>
+            <p style="font-size: 20px; font-family: 'Poppins', sans-serif;">GROBO mengintegrasikan teknologi canggih untuk
+                membantu petani meningkatkan efisiensi dan hasil pertanian dengan sistem yang mudah digunakan dan dapat
+                diandalkan.</p>
         </div>
     </section>
 
@@ -18,7 +21,13 @@
             <div class="row">
                 <div class="section-header align-center mb-5 text-center">
                     <h2 class=" text-capitalize m-0 mb-4">GROBO</h2>
-                    <p>Grobo adalah sebuah situs web yang memberikan informasi terkait proyek alat pertanian yang kami kembangkan. Situs ini dilengkapi dengan berbagai fitur, seperti penyampaian berita terkini mengenai alat yang kami ciptakan, informasi spesifikasi alat, serta layanan untuk bermitra atau menjadi distributor alat tersebut. Selain itu, Grobo juga berfungsi sebagai platform untuk mempromosikan inovasi teknologi pertanian, menjembatani kolaborasi antara petani dan distributor, serta memberikan dukungan bagi komunitas yang ingin berkontribusi dalam pengembangan teknologi pertanian yang berkelanjutan. Kami berkomitmen untuk menjadi solusi terdepan dalam mendukung pertanian modern.</p>
+                    <p>Grobo adalah sebuah situs web yang memberikan informasi terkait proyek alat pertanian yang kami
+                        kembangkan. Situs ini dilengkapi dengan berbagai fitur, seperti penyampaian berita terkini mengenai
+                        alat yang kami ciptakan, informasi spesifikasi alat, serta layanan untuk bermitra atau menjadi
+                        distributor alat tersebut. Selain itu, Grobo juga berfungsi sebagai platform untuk mempromosikan
+                        inovasi teknologi pertanian, menjembatani kolaborasi antara petani dan distributor, serta memberikan
+                        dukungan bagi komunitas yang ingin berkontribusi dalam pengembangan teknologi pertanian yang
+                        berkelanjutan. Kami berkomitmen untuk menjadi solusi terdepan dalam mendukung pertanian modern.</p>
                 </div>
             </div>
         </div>
@@ -27,43 +36,79 @@
 
     <!-- Residence start  -->
     <!--About us start  -->
-    <section id="about-us">
-        <div class="container">
-            <div class="row py-lg-5">
-
-                <h2 class="text-capitalize text-center m-0 py-lg-5">Why to choose us</h2>
-
-                <div class="text-center col-lg-4">
-                    <img src="{{ asset('tmplt/images/search.png') }}" class="bd-placeholder-img rounded-circle"
-                        alt="Bootstrap Themes" width="140" height="140" loading="lazy">
-                    <h4 class="fw-normal mt-5 ">Mudah Untuk Dipantau</h4>
-                    <p>Dengan GROBO, Anda dapat memantau kondisi tanaman Anda dari mana saja. Sistem kami memberikan data
-                        real-time tentang kelembapan tanah,
-                        suhu, dan kondisi lainnya, memudahkan Anda mengelola kebun tanpa harus selalu berada di lokasi.</p>
+    <section class="gallery-section container-fluid py-5 px-0">
+        <div>
+            <h2 class="text-capitalize m-0 py-lg-5 " style="margin-bottom: 0; text-align: center;">Dokumentasi Pengerjaan
+                Alat</h2>
+            <hr class="mx-auto my-3" style="width: 50%; height: 2px; background-color: #ffffff; border: none;">
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"
+                style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="{{ asset('assets/jpg/body-about.jpg') }}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{ asset('assets/jpg/body-about.jpg') }}" alt="Gambar 1">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="{{ asset('assets/jpg/desain-about.jpg') }}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{ asset('assets/jpg/desain-about.jpg') }}" alt="Gambar 2">
+                        </a>
+                    </div>
                 </div>
-
-                <div class="text-center col-lg-4">
-                    <img src="{{ asset('tmplt/images/price.png') }}" class="bd-placeholder-img rounded-circle"
-                        alt="Bootstrap Themes" width="140" height="140" loading="lazy">
-                    <h4 class="fw-normal mt-5">Efisien dan Hemat Biaya</h4>
-                    <p>GROBO membantu menghemat biaya operasional dengan sistem penyiraman otomatis yang tepat waktu dan
-                        hemat air. Dengan teknologi ini,
-                        kami membantu petani meningkatkan efisiensi dan mengurangi penggunaan sumber daya yang berlebihan.
-                    </p>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s"
+                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="{{ asset('assets/jpg/bolongin-about.jpg') }}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{ asset('assets/jpg/bolongin-about.jpg') }}" alt="Gambar 3">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="{{ asset('assets/jpg/body2-about.jpg') }}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{ asset('assets/jpg/body2-about.jpg') }}" alt="Gambar 4">
+                        </a>
+                    </div>
                 </div>
-
-                <div class="text-center col-lg-4">
-                    <img src="{{ asset('tmplt/images/time.png') }}" class="bd-placeholder-img rounded-circle"
-                        alt="Bootstrap Themes" width="140" height="140" loading="lazy">
-                    <h4 class="fw-normal mt-5 ">Proses Otomatis Cepat dan Akurat</h4>
-                    <p>Dengan proses otomatisasi yang presisi, GROBO memastikan setiap tanaman mendapatkan perawatan yang
-                        sesuai. Proses penyiraman dan
-                        pemupukan dilakukan dengan cepat dan tepat, sehingga hasil panen lebih maksimal tanpa perlu
-                        intervensi manual. </p>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="{{ asset('assets/jpg/las-about.jpg') }}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{ asset('assets/jpg/las-about.jpg') }}" alt="Gambar 5">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="{{ asset('assets/jpg/berita1.png') }}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{ asset('assets/jpg/berita1.png') }}" alt="Gambar 6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s"
+                style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="{{ asset('assets/jpg/elektro2-about.jpg') }}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{ asset('assets/jpg/elektro2-about.jpg') }}" alt="Gambar 7">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="{{ asset('assets/jpg/ilman-about.jpg') }}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{ asset('assets/jpg/ilman-about.jpg') }}" alt="Gambar 8">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
 
     <!-- Testimonial start  -->
     <!-- Help start  -->
@@ -75,76 +120,130 @@
                     <h6 class="text-secondary text-uppercase">Our Team</h6>
                     <h1 class="mb-5">Expert Team Members</h1>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item p-4">
-                            <div class="overflow-hidden mb-4">
-                                <img class="img-fluid" src="{{ asset('tmplt2/img/team-1.jpg') }}" alt="">
+                <div class="container">
+                    <div class="row g-4">
+                        <!-- Baris pertama dengan 3 kolom -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="team-item p-4">
+                                <div class="overflow-hidden mb-4">
+                                    <img class="img-fluid" src="{{ asset('assets/jpg/ega.jpg') }}" alt="">
+                                </div>
+                                <h5 class="mb-0">James Brando Gaio</h5>
+                                <p>J0404221050</p>
+                                <div class="btn-slide mt-1">
+                                    <i class="fa fa-share"></i>
+                                    <span>
+                                        <a href="https://www.facebook.com/muhammad.rezga.7" target="_blank">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://x.com/muhammad_rezga" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/el_rezga" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </span>
+                                </div>
                             </div>
-                            <h5 class="mb-0">Full Name</h5>
-                            <p>Designation</p>
-                            <div class="btn-slide mt-1">
-                                <i class="fa fa-share"></i>
-                                <span>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </span>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="team-item p-4">
+                                <div class="overflow-hidden mb-4">
+                                    <img class="img-fluid" src="{{ asset('assets/jpg/ega.jpg') }}" alt="">
+                                </div>
+                                <h5 class="mb-0">Luh Agustina Aryani</h5>
+                                <p>J0404221057</p>
+                                <div class="btn-slide mt-1">
+                                    <i class="fa fa-share"></i>
+                                    <span>
+                                        <a href="https://www.facebook.com/muhammad.rezga.7" target="_blank">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://x.com/muhammad_rezga" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/el_rezga" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="team-item p-4">
+                                <div class="overflow-hidden mb-4">
+                                    <img class="img-fluid" src="{{ asset('assets/jpg/ega.jpg') }}" alt="">
+                                </div>
+                                <h5 class="mb-0">Farhan Aryaputra Hendriawan </h5>
+                                <p>J0404221131</p>
+                                <div class="btn-slide mt-1">
+                                    <i class="fa fa-share"></i>
+                                    <span>
+                                        <a href="https://www.facebook.com/muhammad.rezga.7" target="_blank">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://x.com/muhammad_rezga" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/el_rezga" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item p-4">
-                            <div class="overflow-hidden mb-4">
-                                <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Full Name</h5>
-                            <p>Designation</p>
-                            <div class="btn-slide mt-1">
-                                <i class="fa fa-share"></i>
-                                <span>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item p-4">
-                            <div class="overflow-hidden mb-4">
-                                <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Full Name</h5>
-                            <p>Designation</p>
-                            <div class="btn-slide mt-1">
-                                <i class="fa fa-share"></i>
-                                <span>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </span>
+                    <div class="row g-4">
+                        <!-- Baris kedua dengan 2 kolom -->
+                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="team-item p-4">
+                                <div class="overflow-hidden mb-4">
+                                    <img class="img-fluid" src="{{ asset('assets/jpg/ega.jpg') }}" alt="">
+                                </div>
+                                <h5 class="mb-0">Muhammad El Rezga Karmita</h5>
+                                <p>J0404221122</p>
+                                <div class="btn-slide mt-1">
+                                    <i class="fa fa-share"></i>
+                                    <span>
+                                        <a href="https://www.facebook.com/muhammad.rezga.7" target="_blank">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://x.com/muhammad_rezga" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/el_rezga" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="team-item p-4">
-                            <div class="overflow-hidden mb-4">
-                                <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Full Name</h5>
-                            <p>Designation</p>
-                            <div class="btn-slide mt-1">
-                                <i class="fa fa-share"></i>
-                                <span>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </span>
+                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="team-item p-4">
+                                <div class="overflow-hidden mb-4">
+                                    <img class="img-fluid" src="{{ asset('assets/jpg/ega.jpg') }}" alt="">
+                                </div>
+                                <h5 class="mb-0">Mohamad Nouval Amrullah </h5>
+                                <p>J0404221133</p>
+                                <div class="btn-slide mt-1">
+                                    <i class="fa fa-share"></i>
+                                    <span>
+                                        <a href="https://www.facebook.com/muhammad.rezga.7" target="_blank">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://x.com/muhammad_rezga" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/el_rezga" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
 
 
             </div>
@@ -155,7 +254,7 @@
     <section id="social-media" class="py-5" style="background-color: #121b25;">
         <div class="container text-center text-white">
             <!-- Heading -->
-            <h2 class="mb-4 fw-bold">Our Social Media</h2>
+            <h2 class="mb-4 fw-bold">Follow Sosial Media Kami</h2>
 
             <!-- Icons Section -->
             <div class="d-flex justify-content-center align-items-center gap-4 py-4">

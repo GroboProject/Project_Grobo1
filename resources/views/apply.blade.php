@@ -2,11 +2,7 @@
 @section('title', 'GROBO | Pendaftaran Perusahaan') 
 
 @section('content')
-    <section id="about" class="about-background" style="background-image: url('{{ asset('assets/jpg/about.jpg') }}');">
-        <div class="container text-center text-white">
-            <h1>Judul atau Konten di Atas Background</h1>
-            <p>Deskripsi atau informasi lainnya yang muncul di atas background.</p>
-        </div>
+    <section id="about" class="about-background" style="background-image: url('{{ asset('assets/jpg/bg-apply.png') }}');">
     </section>
 
     <div class="container my-5">

@@ -409,6 +409,40 @@ button.btn.btn-primary.btn-lg.about-search {
         padding-left: 12px;
     }
 }
+
+.gallery-section .row.g-2 {
+    margin: 0; /* Hilangkan margin pada row */
+}
+
+.gallery-section .col-lg-4,
+.gallery-section .col-md-6 {
+    padding: 0; /* Hilangkan padding antar kolom */
+}
+
+.gallery-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Atur ukuran gambar di lightbox */
+.lb-image {
+    max-width: 7%; /* 70% dari lebar layar */
+    max-height: 7%; /* 70% dari tinggi layar */
+    width: auto; /* Agar tetap menjaga proporsi gambar */
+    height: auto; /* Sesuaikan proporsi */
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+.lb-outerContainer {
+    max-width: 10%; /* Sedikit lebih besar dari gambar */
+    max-height: 10%;
+    margin: auto;
+    padding: 10px; /* Memberi ruang untuk container */
+}
+
 /* about background end */
 
 /* spec start */
@@ -574,7 +608,6 @@ button.btn.btn-primary.btn-lg.about-search {
     transition: all 0.3s ease;
 }
 
-
 #core-values i {
     display: inline-block;
     margin-bottom: 10px;
@@ -589,7 +622,6 @@ button.btn.btn-primary.btn-lg.about-search {
     font-size: 0.9rem;
     color: #6c757d;
 }
-  
 
 /* spec end */
 
@@ -638,6 +670,30 @@ button.btn.btn-primary.btn-lg.community-search {
     margin-bottom: 80px;
 }
 
+#community-hero {
+    background: hsla(213, 79%, 8%, 1);
+
+    background: radial-gradient(
+        circle,
+        hsla(213, 79%, 8%, 1) 93%,
+        hsla(122, 61%, 11%, 1) 100%
+    );
+
+    background: -moz-radial-gradient(
+        circle,
+        hsla(213, 79%, 8%, 1) 93%,
+        hsla(122, 61%, 11%, 1) 100%
+    );
+
+    background: -webkit-radial-gradient(
+        circle,
+        hsla(213, 79%, 8%, 1) 93%,
+        hsla(122, 61%, 11%, 1) 100%
+    );
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#041223", endColorstr="#0B2E0C", GradientType=1 );
+}
+
 .card {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -675,6 +731,98 @@ button.btn.btn-primary.btn-lg.community-search {
 
     .card {
         margin-bottom: 20px; /* Tambahkan jarak antar card untuk layar kecil */
+    }
+}
+
+.benefits-section {
+    padding: 6rem;
+    text-align: center;
+    margin-bottom: -10vh; 
+    background: hsla(213, 79%, 8%, 1);
+
+    background: radial-gradient(
+        circle,
+        hsla(213, 79%, 8%, 1) 93%,
+        hsla(122, 61%, 11%, 1) 100%
+    );
+
+    background: -moz-radial-gradient(
+        circle,
+        hsla(213, 79%, 8%, 1) 93%,
+        hsla(122, 61%, 11%, 1) 100%
+    );
+
+    background: -webkit-radial-gradient(
+        circle,
+        hsla(213, 79%, 8%, 1) 93%,
+        hsla(122, 61%, 11%, 1) 100%
+    );
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#041223", endColorstr="#0B2E0C", GradientType=1 ); /* Warna latar sesuai tema gambar */
+}
+
+.benefits-header h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ddfeed; /* Warna aksen */
+}
+
+.benefits-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.benefit-card{
+    background: hsla(213, 77%, 14%, 1);
+
+    background: linear-gradient(
+        90deg,
+        hsla(213, 77%, 14%, 1) 0%,
+        hsla(202, 27%, 45%, 1) 100%
+    );
+
+    background: -moz-linear-gradient(
+        90deg,
+        hsla(213, 77%, 14%, 1) 0%,
+        hsla(202, 27%, 45%, 1) 100%
+    );
+
+    background: -webkit-linear-gradient(
+        90deg,
+        hsla(213, 77%, 14%, 1) 0%,
+        hsla(202, 27%, 45%, 1) 100%
+    );
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#08203e", endColorstr="#557c93", GradientType=1 );
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    text-align: left;
+}
+
+.benefit-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff9800; /* Warna aksen */
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    color: #ddfeed;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .benefits-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit-card {
+        width: 90%;
     }
 }
 /*---- community section end ----  */
