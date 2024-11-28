@@ -126,7 +126,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item p-4">
                                 <div class="overflow-hidden mb-4">
-                                    <img class="img-fluid" src="{{ asset('assets/jpg/ega.jpg') }}" alt="">
+                                    <img class="img-fluid" src="{{ asset('assets/jpg/james.jpg') }}" alt="">
                                 </div>
                                 <h5 class="mb-0">James Brando Gaio</h5>
                                 <p>J0404221050</p>
@@ -258,7 +258,7 @@
 
             <!-- Icons Section -->
             <div class="d-flex justify-content-center align-items-center gap-4 py-4">
-                <a href="#" class="text-white fs-3">
+                <a href="https://www.instagram.com/grobo_agrikultur" class="text-white fs-3" target="_blank">
                     <i class="bi bi-instagram"></i>
                 </a>
                 <a href="#" class="text-white fs-3">

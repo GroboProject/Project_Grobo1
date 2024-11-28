@@ -30,21 +30,21 @@
             </div>
             <div class="benefits-cards">
                 <div class= "benefit-card">
-                    <h3>Informasi dan Diskusi</h3>
+                    <h3 style="color: #fff;">Informasi dan Diskusi</h3>
                     <p>
                         Mulai dari update informasi tentang teknologi terbaru, tips dan trik, dan diskusi tentang
                         pertanian.
                     </p>
                 </div>
                 <div class="benefit-card">
-                    <h3 style="color: blue">Koneksi</h3>
+                    <h3 style="color: #fff;">Koneksi</h3>
                     <p>
                         Dengan ratusan petani dari berbagai wilayah di Indonesia, Anda bisa mendapatkan relasi, partner
                         hingga vendor bisnis.
                     </p>
                 </div>
                 <div class="benefit-card">
-                    <h3>GRATIS Konsultasi</h3>
+                    <h3 style="color: #fff;">GRATIS Konsultasi</h3>
                     <p>
                         Punya masalah alat yang sulit dipecahkan? Konsultasikan dengan tim ahli peternakan dari GROBO.
                     </p>
