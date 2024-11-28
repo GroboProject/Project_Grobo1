@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ApplyController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\RequestController;
 use Illuminate\Support\Facades\Auth;
@@ -37,9 +38,8 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/contact', [FeedbackController::class, 'index']); // Form user
+Route::post('/contact', [FeedbackController::class, 'store'])->name('feedback.store'); // Simpan feedback
 
 Route::get('/disNetwork', [RequestController::class, 'showUserAppliedCompanies'])->name('distributionNetwork');
 
@@ -96,6 +96,11 @@ Route::middleware(['auth', 'userAkses:admin'])->group(function () {
     
     // Rute untuk menampilkan detail perusahaan yang diterima
     Route::get('/admin/companyList/{id}/detail', [RequestController::class, 'showCompanyDetail'])->name('admin.detail');
+
+    // Rute Feedback
+    Route::get('/admin/feedback', [FeedbackController::class, 'adminIndex'])->name('admin.feedback');
+    Route::get('/admin/feedback/{id}', [FeedbackController::class, 'detail'])->name('admin.feedback.detail');
+    Route::delete('/admin/feedback/{id}', [FeedbackController::class, 'destroy'])->name('admin.feedback.destroy');
 });
 
 Route::get('gambar/{filename}', function ($filename) {
@@ -106,11 +111,4 @@ Route::get('gambar/{filename}', function ($filename) {
     }
 
     abort(404);
-});
-
-Route::get('/admin/feedback', function () {
-    return view('/admin/feedback'); 
-});
-Route::get('/admin/detailFeedback', function () {
-    return view('/admin/detailFeedback'); 
 });

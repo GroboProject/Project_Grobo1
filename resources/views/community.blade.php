@@ -17,9 +17,9 @@
                         <h1 class=" text-capitalize  lh-1 my-3">Bertani Jadi Lebih Mudah, Panen Lebih Optimal!</h1>
                         <p class="lead">Gabung sekarang dan jadilah bagian dari komunitas kami untuk bertani lebih cerdas,
                             efisien, dan menghasilkan lebih banyak!</p>
-                        {{-- buat button di sini dengan desain agak melingkar --}}
-                        <a href="" class="btn btn-primary btn-lg px-4 mb-3 mt-2" style="border-radius: 30px">Gabung
-                            Sekarang</a>
+                        <a href="https://chat.whatsapp.com/Lh8QG7lX0cG5o5UBcRX4Sl"
+                            class="btn btn-primary btn-lg px-4 mb-3 mt-2" style="border-radius: 30px" target="_blank"
+                            rel="noopener noreferrer">Gabung Sekarang</a>
                     </div>
                 </div>
             </div>

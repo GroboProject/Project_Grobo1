@@ -15,31 +15,40 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama </th>
+                                        <th>Nama</th>
                                         <th>Email</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>PT. ABC</td>
-                                        <td>8b6wF@example.com</td>
-                                        <td>
-                                            <!-- Tombol untuk Edit -->
-                                            <a href="/admin/detailFeedback" type="button" class="btn btn-primary btn-sm" 
-                                                 >
-                                                <i class="fa fa-eye"></i> detail
-                                            </a>
-
-                                            <!-- Tombol untuk Hapus -->
-                                            <input type="hidden" name="_method" value="DELETE"> <button type="submit"
-                                                class="btn btn-danger btn-sm">
-                                                <i class="fa fa-trash"></i> Hapus
-                                            </button>
-
-                                        </td>
-                                    </tr>
+                                    @forelse ($feedbacks as $feedback)
+                                        <tr>
+                                            <td>{{ $loop->iteration }}</td>
+                                            <td>{{ $feedback->name }}</td>
+                                            <td>{{ $feedback->email }}</td>
+                                            <td>
+                                                <!-- Tombol Detail -->
+                                                <a href="{{ route('admin.feedback.detail', $feedback->id) }}"
+                                                    class="btn btn-primary btn-sm">
+                                                    <i class="fa fa-eye"></i> Detail
+                                                </a>
+                                                <!-- Form Hapus -->
+                                                <form action="{{ route('admin.feedback.destroy', $feedback->id) }}"
+                                                    method="POST" style="display: inline;">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="btn btn-danger btn-sm"
+                                                        onclick="return confirm('Apakah Anda yakin ingin menghapus feedback ini?')">
+                                                        <i class="fa fa-trash"></i> Hapus
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    @empty
+                                        <tr>
+                                            <td colspan="4" class="text-center">Belum ada feedback yang masuk.</td>
+                                        </tr>
+                                    @endforelse
                                 </tbody>
                             </table>
                         </div>
