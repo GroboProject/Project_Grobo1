@@ -85,18 +85,38 @@
 
     <!-- Include CKEditor from CDN -->
     <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
-
     <script>
-        ClassicEditor
-            .create(document.querySelector('#editor'), {
-                ckfinder: {
-                    uploadUrl: '/path/to/upload' // Tentukan URL untuk menerima gambar
-                }
-            })
-            .catch(error => {
-                console.error(error);
+        // Fungsi untuk inisialisasi CKEditor pada textarea tertentu
+        function initializeCKEditor(selector) {
+            ClassicEditor
+                .create(document.querySelector(selector), {
+                    ckfinder: {
+                        uploadUrl: '/path/to/upload' // Sesuaikan URL untuk upload gambar
+                    }
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        }
+
+        // Inisialisasi untuk semua textarea yang ada di awal
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('textarea[id^="editor"]').forEach(textarea => {
+                initializeCKEditor(`#${textarea.id}`);
             });
+        });
+
+        // Inisialisasi CKEditor saat modal dibuka
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('shown.bs.modal', function() {
+                const textarea = modal.querySelector('textarea[id^="editor"]');
+                if (textarea && !ClassicEditor.instances[textarea.id]) {
+                    initializeCKEditor(`#${textarea.id}`);
+                }
+            });
+        });
     </script>
+
 
 
     <script>

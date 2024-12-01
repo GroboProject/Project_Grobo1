@@ -9,7 +9,7 @@
                 </h3>
                 <div class="social-icons" style="margin-left: 30px;">
                     <i class="bi-facebook pe-4"></i>
-                    <i class="bi-instagram pe-4"></i>
+                    <a href="https://www.instagram.com/grobo_agrikultur" target="_blank"><i class="bi-instagram pe-4"></i></a>
                     <i class="bi-twitter pe-4"></i>
                     <i class="bi-youtube pe-4"></i>
                 </div>

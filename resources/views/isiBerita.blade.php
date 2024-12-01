@@ -12,13 +12,15 @@
                         <header class="mb-4">
                             <h1 class="fw-bolder mb-1">{{ $news->judul }}</h1>
                             <div class="text-muted fst-italic mb-2">Ditulis oleh {{ $news->penulis }}</div>
+                            <div class="text-muted fst-italic mb-2">{{ $news->created_at }}</div>
                         </header>
                         <figure class="mb-4">
-                            <img class="img-fluid rounded" src="{{ Storage::url($news->gambar) }}" alt="{{ $news->judul }}" />
+                            <img class="img-fluid rounded" src="{{ Storage::url($news->gambar) }}"
+                                alt="{{ $news->judul }}" />
                         </figure>
                         <section class="mb-5">
-                            <p class="fs-5 mb-4">{{ nl2br(strip_tags($news->isi)) }}</p>
-                        </section>
+                            <div class="fs-5 mb-4" style="text-align: justify;">{!! $news->isi !!}</div>
+                        </section>                        
                     </article>
 
                     <!-- Tombol Kembali -->

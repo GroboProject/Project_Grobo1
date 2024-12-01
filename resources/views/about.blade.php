@@ -121,9 +121,9 @@
                     <h1 class="mb-5">Expert Team Members</h1>
                 </div>
                 <div class="container">
-                    <div class="row g-4">
+                    <div class="row g-1">
                         <!-- Baris pertama dengan 3 kolom -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item p-4">
                                 <div class="overflow-hidden mb-4">
                                     <img class="img-fluid" src="{{ asset('assets/jpg/james.jpg') }}" alt="">
@@ -136,7 +136,7 @@
                                         <a href="https://www.facebook.com/muhammad.rezga.7" target="_blank">
                                             <i class="fab fa-facebook-f"></i>
                                         </a>
-                                        <a href="https://x.com/muhammad_rezga" target="_blank">
+                                        <a href="https://x.com/lawakbangetasw" target="_blank">
                                             <i class="fab fa-twitter"></i>
                                         </a>
                                         <a href="https://www.instagram.com/el_rezga" target="_blank">
@@ -149,7 +149,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item p-4">
                                 <div class="overflow-hidden mb-4">
-                                    <img class="img-fluid" src="{{ asset('assets/jpg/ega.jpg') }}" alt="">
+                                    <img class="img-fluid" src="{{ asset('assets/jpg/agus.jpg') }}" alt="">
                                 </div>
                                 <h5 class="mb-0">Luh Agustina Aryani</h5>
                                 <p>J0404221057</p>
@@ -172,7 +172,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item p-4">
                                 <div class="overflow-hidden mb-4">
-                                    <img class="img-fluid" src="{{ asset('assets/jpg/ega.jpg') }}" alt="">
+                                    <img class="img-fluid" src="{{ asset('assets/jpg/farhan.jpg') }}" alt="">
                                 </div>
                                 <h5 class="mb-0">Farhan Aryaputra Hendriawan </h5>
                                 <p>J0404221131</p>
@@ -193,7 +193,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row g-4">
+                    <div class="row g-2">
                         <!-- Baris kedua dengan 2 kolom -->
                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item p-4">
@@ -243,9 +243,6 @@
                         </div>
                     </div>
                 </div>
-                
-
-
             </div>
         </div>
     </section>

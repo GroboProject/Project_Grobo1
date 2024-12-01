@@ -3,13 +3,14 @@
 @section('title', 'Dashboard')
 
 @section('contents')
-    <div class="container" style="padding-left: 170px;">
-        <h1 class="mb-4">Dashboard Admin</h1>
-        <div class="row">
+    <div class="content-wrapper">
+        <h1 class="mb-1 mt-2">Dashboard Admin</h1>
+        <hr class="mx-auto my-3">
+        <div class="row g-4">
             <!-- Total News -->
-            <div class="col-md-3">
-                <div class="card shadow-sm">
-                    <div class="card-body">
+            <div class="col-sm-5 col-md-3">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Total Berita</h5>
                         <p class="card-text fs-4">{{ $totalNews }}</p>
                     </div>
@@ -17,9 +18,9 @@
             </div>
 
             <!-- Total Requests -->
-            <div class="col-md-3">
-                <div class="card shadow-sm">
-                    <div class="card-body">
+            <div class="col-sm-5 col-md-3">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Total Permintaan</h5>
                         <p class="card-text fs-4">{{ $totalRequests }}</p>
                     </div>
@@ -27,9 +28,9 @@
             </div>
 
             <!-- Total Approved Companies -->
-            <div class="col-md-3">
-                <div class="card shadow-sm">
-                    <div class="card-body">
+            <div class="col-sm-5 col-md-3">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Total Perusahaan yang Disetujui</h5>
                         <p class="card-text fs-4">{{ $totalApprovedCompanies }}</p>
                     </div>
@@ -37,9 +38,9 @@
             </div>
 
             <!-- Total Feedback -->
-            <div class="col-md-3">
-                <div class="card shadow-sm">
-                    <div class="card-body">
+            <div class="col-sm-5 col-md-3">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Total Feedback</h5>
                         <p class="card-text fs-4">{{ $totalFeedbacks }}</p>
                     </div>

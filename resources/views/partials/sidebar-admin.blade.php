@@ -39,11 +39,6 @@
                     <span>Feedback</span>
                 </a>
             </li>
-            <li>
-                <a href="#" class="sidebar-link">
-                    <span>Update 5</span>
-                </a>
-            </li>
         </ul>
     </nav>
 </aside>

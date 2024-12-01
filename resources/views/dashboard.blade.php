@@ -60,11 +60,12 @@
     <section id="residence">
         <div class="container my-5 py-5 text-center">
             <h2 class="text-capitalize m-0 py-lg-5">Spesifikasi dari GROVE</h2>
-
+            <p style="margin-top: -25px;">Dapatkan informasi teknis lengkap tentang GROVE di sini </p>
+            <p style="margin-top: -20px;">(klik gambar)</p>
             <div class="video-box mb-5">
                 <a href="/specification"><video class="video-content" src="{{ asset('assets/jpg/grove_gif.gif') }}"
-                        poster="{{ asset('assets/jpg/grove_gif.gif') }}" playsinline muted autoplay="false"
-                        loop="false" style="width: 110%; max-width: 100vh; height: 100%;"></video></a>
+                        poster="{{ asset('assets/jpg/grove_gif.gif') }}" playsinline muted autoplay="false" loop="false"
+                        style="width: 110%; max-width: 100vh; height: 100%;"></video></a>
             </div>
     </section>
 
@@ -234,7 +235,7 @@
         function checkLogin() {
             // Simulasi login status; ubah sesuai kebutuhan
             const isLoggedIn = false; // Ubah menjadi true jika pengguna sudah login
-    
+
             if (!isLoggedIn) {
                 const loginModals = new bootstrap.Modal(document.getElementById('loginModals'));
                 loginModals.show();

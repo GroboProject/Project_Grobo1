@@ -33,7 +33,7 @@
                             <a class="nav-link me-md-4 text-center" data-bs-toggle="dropdown" href="#"
                                 role="button" aria-expanded="false">About</a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a href="/about" class="dropdown-item">About Grove</a></li>
+                                <li><a href="/about" class="dropdown-item">About us</a></li>
                                 <li><a href="/contact" class="dropdown-item">Contact us</a></li>
                             </ul>
                         </li>
